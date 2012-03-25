@@ -179,7 +179,7 @@
 			<id>righettod</id>
 			<name>Dominique Righetto</name>
 			<email>dominique.righetto@gmail.com</email>
-			<url>http://righetto.googlecode.com</url>
+			<url>https://github.com/righettod/hibernate-validator-security-contribs</url>
 			<roles>
 				<role>developer</role>
 			</roles>
@@ -187,14 +187,15 @@
 		</developer>
 	</developers>
 	<issueManagement>
-		<system>Google Code</system>
-		<url>http://code.google.com/p/righettod/issues/list</url>
+		<system>Github</system>
+		<url>https://github.com/righettod/hibernate-validator-security-contribs/issues</url>
 	</issueManagement>
 	<scm>
-		<url>http://code.google.com/p/righettod/source/browse/#git%2FACTIVE_PROJECTS%2Fhibernate-validator-additional-security-annotations</url>
-		<connection>scm:git:https://code.google.com/p/righettod</connection>
+    <connection>scm:git:git@github.com:righettod/hibernate-validator-security-contribs.git</connection>
+    <developerConnection>scm:git:git@github.com:righettod/hibernate-validator-security-contribs.git</developerConnection>
+    <url>git@github.com:righettod/hibernate-validator-security-contribs.git</url>
 	</scm>
-	<url>http://righettod.googlecode.com</url>
+	<url>https://github.com/righettod/hibernate-validator-security-contribs</url>
 	<organization>
 		<name>Personal</name>
 		<url>http://righettod.googlecode.com</url>
