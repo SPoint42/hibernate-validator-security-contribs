@@ -3,8 +3,8 @@
 **********
 
 ** Description
-This project have to objective to provide content checking constraints annotations set 
-focused on security using the JSR303 RI Hibernate Validation. 
+This project have to objective to provide content checking constraints annotations set, 
+focused on security, using the JSR303 RI Hibernate Validation. 
 (http://www.hibernate.org/subprojects/validator.html).
 
 This JSR can be used to perform security check on input user data and then it's for this 
@@ -18,13 +18,11 @@ Type command:
 -  "mvn package" to obtains project binary distribution.
 
 ** Issue tracking
-Issue are tracked on my Google Code repository : http://code.google.com/p/righettod/issues/list 
-
+Issue are tracked on: 
+https://github.com/righettod/hibernate-validator-security-contribs/issues
 
 
 Feel free to create a ticket in case of issue/remark/feature ;o)
 
-
-----------------------
+Kind regards,
 Dominique Righetto
-March 2012
