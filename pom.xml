@@ -193,7 +193,7 @@
 	<scm>
     <connection>scm:git:git@github.com:righettod/hibernate-validator-security-contribs.git</connection>
     <developerConnection>scm:git:git@github.com:righettod/hibernate-validator-security-contribs.git</developerConnection>
-    <url>git@github.com:righettod/hibernate-validator-security-contribs.git</url>
+    <url>https://github.com/righettod/hibernate-validator-security-contribs</url>
 	</scm>
 	<url>https://github.com/righettod/hibernate-validator-security-contribs</url>
 	<organization>

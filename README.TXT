@@ -12,14 +12,19 @@ reason that i decided to use it as framework.
 
 This project is implemented using Maven (v3.x) structure.
 
-** Project distribution/informations/documentation
+** Project distribution/informations
 Type command:
--  "mvn site" to obtains project identity card and documentation.
+-  "mvn site" to obtains project identity card.
 -  "mvn package" to obtains project binary distribution.
 
-** Issue tracking
-Issue are tracked on: 
+** Issues tracking
+Issues are tracked on: 
 https://github.com/righettod/hibernate-validator-security-contribs/issues
+
+** Documentation
+Project documentation is available on:
+http://righettod.github.com/hibernate-validator-security-contribs
+
 
 
 Feel free to create a ticket in case of issue/remark/feature ;o)
