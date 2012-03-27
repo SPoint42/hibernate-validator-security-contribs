@@ -202,12 +202,12 @@
 	</organization>
 	<distributionManagement>
 		<repository>
-			<id>Sonatype-OSS-Releases</id>
+			<id>sonatype-nexus-staging</id>
 			<name>Sonatype OSS repository for staging releases</name>
 			<url>https://oss.sonatype.org/service/local/staging/deploy/maven2</url>
 		</repository>
 		<snapshotRepository>
-			<id>Sonatype-OSS-Snapshots</id>
+			<id>sonatype-nexus-snapshots</id>
 			<name>Sonatype OSS repository for deploying snapshots</name>
 			<url>https://oss.sonatype.org/content/repositories/snapshots</url>
 			<uniqueVersion>false</uniqueVersion>
