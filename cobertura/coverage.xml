@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE coverage SYSTEM "http://cobertura.sourceforge.net/xml/coverage-04.dtd">
 
-<coverage line-rate="0.7285714285714285" branch-rate="0.9117647058823529" lines-covered="51" lines-valid="70" branches-covered="31" branches-valid="34" complexity="7.25" version="1.9.4.1" timestamp="1332862265912">
+<coverage line-rate="0.7285714285714285" branch-rate="0.9117647058823529" lines-covered="51" lines-valid="70" branches-covered="31" branches-valid="34" complexity="7.25" version="1.9.4.1" timestamp="1332869323144">
 	<sources>
 		<source>d:/IT_RESEARCH/PROJECTS_HOME/hibernate-validator-security-contribs/src/main/java</source>
 		<source>--source</source>
