@@ -1,21 +1,21 @@
 <?xml version="1.0"?>
 <!DOCTYPE coverage SYSTEM "http://cobertura.sourceforge.net/xml/coverage-04.dtd">
 
-<coverage line-rate="0.7285714285714285" branch-rate="0.9117647058823529" lines-covered="51" lines-valid="70" branches-covered="31" branches-valid="34" complexity="7.25" version="1.9.4.1" timestamp="1332869323144">
+<coverage line-rate="0.7285714285714285" branch-rate="0.9117647058823529" lines-covered="51" lines-valid="70" branches-covered="31" branches-valid="34" complexity="7.25" version="1.9.4.1" timestamp="1333178312864">
 	<sources>
 		<source>d:/IT_RESEARCH/PROJECTS_HOME/hibernate-validator-security-contribs/src/main/java</source>
 		<source>--source</source>
 	</sources>
 	<packages>
-		<package name="com.righettod.security.annotation" line-rate="1.0" branch-rate="1.0" complexity="0.0">
+		<package name="com.github.righettod.hvsc.annotation" line-rate="1.0" branch-rate="1.0" complexity="0.0">
 			<classes>
-				<class name="com.righettod.security.annotation.CheckContent" filename="com/righettod/security/annotation/CheckContent.java" line-rate="1.0" branch-rate="1.0" complexity="0.0">
+				<class name="com.github.righettod.hvsc.annotation.CheckContent" filename="com/github/righettod/hvsc/annotation/CheckContent.java" line-rate="1.0" branch-rate="1.0" complexity="0.0">
 					<methods>
 					</methods>
 					<lines>
 					</lines>
 				</class>
-				<class name="com.righettod.security.annotation.NoTag" filename="com/righettod/security/annotation/NoTag.java" line-rate="1.0" branch-rate="1.0" complexity="0.0">
+				<class name="com.github.righettod.hvsc.annotation.NoTag" filename="com/github/righettod/hvsc/annotation/NoTag.java" line-rate="1.0" branch-rate="1.0" complexity="0.0">
 					<methods>
 					</methods>
 					<lines>
@@ -23,9 +23,9 @@
 				</class>
 			</classes>
 		</package>
-		<package name="com.righettod.security.annotation.validator" line-rate="0.7285714285714285" branch-rate="0.9117647058823529" complexity="7.25">
+		<package name="com.github.righettod.hvsc.annotation.validator" line-rate="0.7285714285714285" branch-rate="0.9117647058823529" complexity="7.25">
 			<classes>
-				<class name="com.righettod.security.annotation.validator.CheckContentValidator" filename="com/righettod/security/annotation/validator/CheckContentValidator.java" line-rate="0.711864406779661" branch-rate="0.8928571428571429" complexity="12.0">
+				<class name="com.github.righettod.hvsc.annotation.validator.CheckContentValidator" filename="com/github/righettod/hvsc/annotation/validator/CheckContentValidator.java" line-rate="0.711864406779661" branch-rate="0.8928571428571429" complexity="12.0">
 					<methods>
 						<method name="&lt;clinit&gt;" signature="()V" line-rate="1.0" branch-rate="1.0">
 							<lines>
@@ -38,7 +38,7 @@
 								<line number="48" hits="12" branch="false"/>
 							</lines>
 						</method>
-						<method name="initialize" signature="(Lcom/righettod/security/annotation/CheckContent;)V" line-rate="0.5454545454545454" branch-rate="0.75">
+						<method name="initialize" signature="(Lcom/github/righettod/hvsc/annotation/CheckContent;)V" line-rate="0.5454545454545454" branch-rate="0.75">
 							<lines>
 								<line number="59" hits="12" branch="false"/>
 								<line number="60" hits="12" branch="false"/>
@@ -267,7 +267,7 @@
 						<line number="156" hits="96" branch="false"/>
 					</lines>
 				</class>
-				<class name="com.righettod.security.annotation.validator.NoTagValidator" filename="com/righettod/security/annotation/validator/NoTagValidator.java" line-rate="0.8181818181818182" branch-rate="1.0" complexity="2.5">
+				<class name="com.github.righettod.hvsc.annotation.validator.NoTagValidator" filename="com/github/righettod/hvsc/annotation/validator/NoTagValidator.java" line-rate="0.8181818181818182" branch-rate="1.0" complexity="2.5">
 					<methods>
 						<method name="&lt;clinit&gt;" signature="()V" line-rate="1.0" branch-rate="1.0">
 							<lines>
@@ -278,7 +278,7 @@
 							<lines>
 							</lines>
 						</method>
-						<method name="initialize" signature="(Lcom/righettod/security/annotation/NoTag;)V" line-rate="1.0" branch-rate="1.0">
+						<method name="initialize" signature="(Lcom/github/righettod/hvsc/annotation/NoTag;)V" line-rate="1.0" branch-rate="1.0">
 							<lines>
 								<line number="35" hits="2" branch="false"/>
 							</lines>

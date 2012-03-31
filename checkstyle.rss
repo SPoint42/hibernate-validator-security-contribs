@@ -29,7 +29,7 @@
           <tbody>
                           <tr>
                 <td>
-                  <a href="https://github.com/righettod/hibernate-validator-security-contribs/checkstyle.html#com.righettod.security.annotation.NoTag.java">com/righettod/security/annotation/NoTag.java</a>
+                  <a href="https://github.com/righettod/hibernate-validator-security-contribs/checkstyle.html#com.github.righettod.hvsc.annotation.validator.CheckContentValidator.java">com/github/righettod/hvsc/annotation/validator/CheckContentValidator.java</a>
                 </td>
                 <td>
                   0
@@ -43,7 +43,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://github.com/righettod/hibernate-validator-security-contribs/checkstyle.html#com.righettod.security.annotation.validator.CheckContentValidator.java">com/righettod/security/annotation/validator/CheckContentValidator.java</a>
+                  <a href="https://github.com/righettod/hibernate-validator-security-contribs/checkstyle.html#com.github.righettod.hvsc.annotation.CheckContent.java">com/github/righettod/hvsc/annotation/CheckContent.java</a>
                 </td>
                 <td>
                   0
@@ -57,7 +57,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://github.com/righettod/hibernate-validator-security-contribs/checkstyle.html#com.righettod.security.annotation.CheckContent.java">com/righettod/security/annotation/CheckContent.java</a>
+                  <a href="https://github.com/righettod/hibernate-validator-security-contribs/checkstyle.html#com.github.righettod.hvsc.annotation.validator.NoTagValidator.java">com/github/righettod/hvsc/annotation/validator/NoTagValidator.java</a>
                 </td>
                 <td>
                   0
@@ -71,7 +71,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://github.com/righettod/hibernate-validator-security-contribs/checkstyle.html#com.righettod.security.annotation.validator.NoTagValidator.java">com/righettod/security/annotation/validator/NoTagValidator.java</a>
+                  <a href="https://github.com/righettod/hibernate-validator-security-contribs/checkstyle.html#com.github.righettod.hvsc.annotation.NoTag.java">com/github/righettod/hvsc/annotation/NoTag.java</a>
                 </td>
                 <td>
                   0
