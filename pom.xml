@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.github.righettod</groupId>
 	<artifactId>hibernate-validator-security-contribs</artifactId>
-	<version>1.0.0-SNAPSHOT</version>
+	<version>1.0.0</version>
 	<name>hibernate-validator-security-contribs</name>
 	<packaging>jar</packaging>
 	<description>This project have to objective to provide content checking constraints annotations set, focused on security, using the JSR303 RI Hibernate Validation.</description>
