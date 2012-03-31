@@ -1,4 +1,4 @@
-package com.righettod.security.test;
+package com.github.righettod.hvsc.test;
 
 import java.util.Set;
 

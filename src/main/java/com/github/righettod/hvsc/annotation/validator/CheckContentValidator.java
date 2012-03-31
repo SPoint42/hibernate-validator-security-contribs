@@ -1,4 +1,4 @@
-package com.righettod.security.annotation.validator;
+package com.github.righettod.hvsc.annotation.validator;
 
 import java.io.IOException;
 import java.util.Locale;
@@ -15,7 +15,7 @@ import org.codehaus.jackson.map.ObjectMapper;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.righettod.security.annotation.CheckContent;
+import com.github.righettod.hvsc.annotation.CheckContent;
 
 /**
  * Implementation of the validator performing processing for annotation "CheckContent".

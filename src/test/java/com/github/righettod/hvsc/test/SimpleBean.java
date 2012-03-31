@@ -1,7 +1,7 @@
-package com.righettod.security.test;
+package com.github.righettod.hvsc.test;
 
-import com.righettod.security.annotation.CheckContent;
-import com.righettod.security.annotation.NoTag;
+import com.github.righettod.hvsc.annotation.CheckContent;
+import com.github.righettod.hvsc.annotation.NoTag;
 
 /**
  * Simple bean to test annotation

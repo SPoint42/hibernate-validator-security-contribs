@@ -1,4 +1,4 @@
-package com.righettod.security.annotation;
+package com.github.righettod.hvsc.annotation;
 
 import static java.lang.annotation.ElementType.ANNOTATION_TYPE;
 import static java.lang.annotation.ElementType.FIELD;
@@ -12,7 +12,7 @@ import java.lang.annotation.Target;
 import javax.validation.Constraint;
 import javax.validation.Payload;
 
-import com.righettod.security.annotation.validator.NoTagValidator;
+import com.github.righettod.hvsc.annotation.validator.NoTagValidator;
 
 /**
  * Define annotation to validate content of a string, check that the string contains no HTML/XML tags
@@ -32,7 +32,7 @@ public @interface NoTag {
 	/* Attributes required by the 'Bean Validation API' */
 
 	/** Message that returns the default key for creating error messages in case the constraint is violated. */
-	String message() default "{com.righettod.security.annotation.notag}";
+	String message() default "{com.github.righettod.hvsc.annotation.notag}";
 
 	/** Allows the specification of validation groups, to which this constraint belongs. */
 	Class<?>[] groups() default {};

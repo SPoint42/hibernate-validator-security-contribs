@@ -1,4 +1,4 @@
-package com.righettod.security.annotation.validator;
+package com.github.righettod.hvsc.annotation.validator;
 
 import java.net.URLDecoder;
 import java.nio.charset.Charset;
@@ -10,7 +10,7 @@ import org.apache.commons.lang.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.righettod.security.annotation.NoTag;
+import com.github.righettod.hvsc.annotation.NoTag;
 
 /**
  * Implementation of the validator performing processing for annotation "NoTag".
