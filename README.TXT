@@ -3,7 +3,7 @@
 **********
 
 ** Description
-This project have to objective to provide content checking constraints annotations set, 
+This project aims at providing a set of content-checking constraint annotations, 
 focused on security, using the JSR303 RI Hibernate Validation. 
 (http://www.hibernate.org/subprojects/validator.html).
 
