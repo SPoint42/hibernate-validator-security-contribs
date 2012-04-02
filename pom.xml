@@ -6,7 +6,7 @@
 	<version>1.0.0</version>
 	<name>hibernate-validator-security-contribs</name>
 	<packaging>jar</packaging>
-	<description>This project have to objective to provide content checking constraints annotations set, focused on security, using the JSR303 RI Hibernate Validation.</description>
+	<description>This project aims at providing a set of content-checking constraint annotations, focused on security, using the JSR303 RI Hibernate Validation.</description>
 	<dependencies>
 		<dependency>
 			<groupId>org.hibernate</groupId>
