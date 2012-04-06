@@ -30,7 +30,7 @@ http://righettod.github.com/hibernate-validator-security-contribs
 First official release
 
 
-Feel free to create a ticket in case of issue/remark/feature ;o)
+Feel free to create a ticket in case of issues/remarks/features ;o)
 
 Kind regards,
 Dominique Righetto
