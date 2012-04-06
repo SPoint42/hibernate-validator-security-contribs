@@ -19,6 +19,7 @@
 			<item name="Annotation : CheckContent" href="annotation-CheckContent.html" />
 			<item name="Annotation : NoTag" href="annotation-NoTag.html" />
 			<item name="Annotation : OnlyPrintableCharacter" href="annotation-OnlyPrintableCharacter.html" />
+			<item name="Annotation : NoLdap" href="annotation-NoLdap.html" />
 			<item name="Validation" href="validation.html" />
 		</menu>
 		<menu ref="reports" />

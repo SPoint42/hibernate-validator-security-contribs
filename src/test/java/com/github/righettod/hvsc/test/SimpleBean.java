@@ -1,6 +1,7 @@
 package com.github.righettod.hvsc.test;
 
 import com.github.righettod.hvsc.annotation.CheckContent;
+import com.github.righettod.hvsc.annotation.NoLdap;
 import com.github.righettod.hvsc.annotation.NoTag;
 import com.github.righettod.hvsc.annotation.OnlyPrintableCharacter;
 
@@ -47,6 +48,10 @@ public class SimpleBean {
 	/** onlyPrintableCharacter */
 	@OnlyPrintableCharacter(acceptedNonPrintableCharacterSet = "\n\r\t ")
 	private String data9 = null;
+
+	/** noLdap */
+	@NoLdap
+	private String data10 = null;
 
 	/**
 	 * Getter
@@ -217,6 +222,25 @@ public class SimpleBean {
 	 */
 	public void setData9(String data9) {
 		this.data9 = data9;
+	}
+
+	/**
+	 * Getter
+	 * 
+	 * @return the data10
+	 */
+	public String getData10() {
+		return this.data10;
+	}
+
+	/**
+	 * Setter : No Ldap
+	 * 
+	 * @param data10
+	 *        the data10 to set
+	 */
+	public void setData10(String data10) {
+		this.data10 = data10;
 	}
 
 }

@@ -7,18 +7,23 @@ How to use validation.
 	To perform validation on an annoted bean instance, follow steps below:
 	
 	[[1]] Obtains an "javax.validation.Validator" instance using "javax.validation.Validation" factory: 
-		
-		Validator val = Validation.buildDefaultValidatorFactory().getValidator();
+
++--------------------------------------------------------------------------+		
+Validator val = Validation.buildDefaultValidatorFactory().getValidator();
++--------------------------------------------------------------------------+		
 	
 	[[2]] Apply validation on target bean using created validator in order to obtains a "java.util.Set" of "javax.validation.ConstraintViolation" instances:
 	
-		Set\<ConstraintViolation\<MyBeanClass\>\> constraintViolations = val.validate(bean);
++--------------------------------------------------------------------------+
+Set<ConstraintViolation<MyBeanClass>> constraintViolations = val.validate(bean);
++--------------------------------------------------------------------------+		
 		
 	[[3]] Check if constraint violations exists using Set object obtained:
-	
-		constraintViolations.isEmpty(); 	 	 
-		
-		constraintViolations.iterator();
+
++--------------------------------------------------------------------------+	
+constraintViolations.isEmpty();	
+constraintViolations.iterator();
++--------------------------------------------------------------------------+		
 
 	[]
 	
