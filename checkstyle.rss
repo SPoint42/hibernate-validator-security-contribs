@@ -8,7 +8,7 @@
     <language>en-us</language>
     <copyright>&#169;2012 Personal</copyright>
     <item>
-      <title>File: 4,
+      <title>File: 6,
              Errors: 0,
              Warnings: 0,
              Infos: 0
@@ -58,6 +58,34 @@
                           <tr>
                 <td>
                   <a href="https://github.com/righettod/hibernate-validator-security-contribs/checkstyle.html#com.github.righettod.hvsc.annotation.validator.NoTagValidator.java">com/github/righettod/hvsc/annotation/validator/NoTagValidator.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/righettod/hibernate-validator-security-contribs/checkstyle.html#com.github.righettod.hvsc.annotation.validator.OnlyPrintableCharacterValidator.java">com/github/righettod/hvsc/annotation/validator/OnlyPrintableCharacterValidator.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/righettod/hibernate-validator-security-contribs/checkstyle.html#com.github.righettod.hvsc.annotation.OnlyPrintableCharacter.java">com/github/righettod/hvsc/annotation/OnlyPrintableCharacter.java</a>
                 </td>
                 <td>
                   0

@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE coverage SYSTEM "http://cobertura.sourceforge.net/xml/coverage-04.dtd">
 
-<coverage line-rate="0.7285714285714285" branch-rate="0.9117647058823529" lines-covered="51" lines-valid="70" branches-covered="31" branches-valid="34" complexity="7.25" version="1.9.4.1" timestamp="1333178312864">
+<coverage line-rate="0.7717391304347826" branch-rate="0.7804878048780488" lines-covered="71" lines-valid="92" branches-covered="64" branches-valid="82" complexity="9.166666666666666" version="1.9.4.1" timestamp="1333701014618">
 	<sources>
 		<source>d:/IT_RESEARCH/PROJECTS_HOME/hibernate-validator-security-contribs/src/main/java</source>
 		<source>--source</source>
@@ -21,9 +21,15 @@
 					<lines>
 					</lines>
 				</class>
+				<class name="com.github.righettod.hvsc.annotation.OnlyPrintableCharacter" filename="com/github/righettod/hvsc/annotation/OnlyPrintableCharacter.java" line-rate="1.0" branch-rate="1.0" complexity="0.0">
+					<methods>
+					</methods>
+					<lines>
+					</lines>
+				</class>
 			</classes>
 		</package>
-		<package name="com.github.righettod.hvsc.annotation.validator" line-rate="0.7285714285714285" branch-rate="0.9117647058823529" complexity="7.25">
+		<package name="com.github.righettod.hvsc.annotation.validator" line-rate="0.7717391304347826" branch-rate="0.7804878048780488" complexity="9.166666666666666">
 			<classes>
 				<class name="com.github.righettod.hvsc.annotation.validator.CheckContentValidator" filename="com/github/righettod/hvsc/annotation/validator/CheckContentValidator.java" line-rate="0.711864406779661" branch-rate="0.8928571428571429" complexity="12.0">
 					<methods>
@@ -34,43 +40,43 @@
 						</method>
 						<method name="&lt;init&gt;" signature="()V" line-rate="1.0" branch-rate="1.0">
 							<lines>
-								<line number="45" hits="12" branch="false"/>
-								<line number="48" hits="12" branch="false"/>
+								<line number="45" hits="18" branch="false"/>
+								<line number="48" hits="18" branch="false"/>
 							</lines>
 						</method>
 						<method name="initialize" signature="(Lcom/github/righettod/hvsc/annotation/CheckContent;)V" line-rate="0.5454545454545454" branch-rate="0.75">
 							<lines>
-								<line number="59" hits="12" branch="false"/>
-								<line number="60" hits="12" branch="false"/>
-								<line number="64" hits="12" branch="false"/>
-								<line number="65" hits="12" branch="true" condition-coverage="100 % (2/2)">
+								<line number="59" hits="18" branch="false"/>
+								<line number="60" hits="18" branch="false"/>
+								<line number="64" hits="18" branch="false"/>
+								<line number="65" hits="18" branch="true" condition-coverage="100 % (2/2)">
 									<conditions>
 										<condition number="0" type="jump" coverage="100 %"/>
 									</conditions>
 								</line>
-								<line number="66" hits="4" branch="false"/>
-								<line number="69" hits="12" branch="false"/>
-								<line number="71" hits="12" branch="false"/>
+								<line number="66" hits="6" branch="false"/>
+								<line number="69" hits="18" branch="false"/>
+								<line number="71" hits="18" branch="false"/>
 								<line number="72" hits="0" branch="false"/>
 								<line number="74" hits="0" branch="false"/>
 								<line number="76" hits="0" branch="false"/>
-								<line number="77" hits="12" branch="false"/>
-								<line number="79" hits="12" branch="true" condition-coverage="75 % (3/4)">
+								<line number="77" hits="18" branch="false"/>
+								<line number="79" hits="18" branch="true" condition-coverage="75 % (3/4)">
 									<conditions>
 										<condition number="0" type="jump" coverage="50 %"/>
 										<condition number="1" type="jump" coverage="100 %"/>
 									</conditions>
 								</line>
-								<line number="81" hits="2" branch="false"/>
-								<line number="82" hits="2" branch="false"/>
-								<line number="85" hits="12" branch="false"/>
-								<line number="88" hits="12" branch="true" condition-coverage="100 % (2/2)">
+								<line number="81" hits="3" branch="false"/>
+								<line number="82" hits="3" branch="false"/>
+								<line number="85" hits="18" branch="false"/>
+								<line number="88" hits="18" branch="true" condition-coverage="100 % (2/2)">
 									<conditions>
 										<condition number="0" type="jump" coverage="100 %"/>
 									</conditions>
 								</line>
-								<line number="90" hits="4" branch="false"/>
-								<line number="91" hits="4" branch="true" condition-coverage="50 % (1/2)">
+								<line number="90" hits="6" branch="false"/>
+								<line number="91" hits="6" branch="true" condition-coverage="50 % (1/2)">
 									<conditions>
 										<condition number="0" type="jump" coverage="50 %"/>
 									</conditions>
@@ -83,8 +89,8 @@
 								<line number="98" hits="0" branch="false"/>
 								<line number="100" hits="0" branch="false"/>
 								<line number="101" hits="0" branch="false"/>
-								<line number="102" hits="4" branch="false"/>
-								<line number="106" hits="12" branch="true" condition-coverage="50 % (1/2)">
+								<line number="102" hits="6" branch="false"/>
+								<line number="106" hits="18" branch="true" condition-coverage="50 % (1/2)">
 									<conditions>
 										<condition number="0" type="jump" coverage="50 %"/>
 									</conditions>
@@ -93,12 +99,12 @@
 								<line number="108" hits="0" branch="false"/>
 								<line number="109" hits="0" branch="false"/>
 								<line number="110" hits="0" branch="false"/>
-								<line number="112" hits="12" branch="false"/>
+								<line number="112" hits="18" branch="false"/>
 							</lines>
 						</method>
 						<method name="initialize" signature="(Ljava/lang/annotation/Annotation;)V" line-rate="1.0" branch-rate="1.0">
 							<lines>
-								<line number="27" hits="120" branch="false"/>
+								<line number="27" hits="174" branch="false"/>
 							</lines>
 						</method>
 						<method name="isValid" signature="(Ljava/lang/Object;Ljavax/validation/ConstraintValidatorContext;)Z" line-rate="1.0" branch-rate="1.0">
@@ -107,11 +113,11 @@
 						</method>
 						<method name="isValid" signature="(Ljava/lang/String;Ljavax/validation/ConstraintValidatorContext;)Z" line-rate="0.9090909090909091" branch-rate="1.0">
 							<lines>
-								<line number="122" hits="96" branch="false"/>
-								<line number="123" hits="96" branch="false"/>
-								<line number="124" hits="96" branch="false"/>
-								<line number="125" hits="96" branch="false"/>
-								<line number="128" hits="96" branch="true" condition-coverage="100 % (2/2)">
+								<line number="122" hits="138" branch="false"/>
+								<line number="123" hits="138" branch="false"/>
+								<line number="124" hits="138" branch="false"/>
+								<line number="125" hits="138" branch="false"/>
+								<line number="128" hits="138" branch="true" condition-coverage="100 % (2/2)">
 									<conditions>
 										<condition number="0" type="jump" coverage="100 %"/>
 									</conditions>
@@ -153,47 +159,47 @@
 								<line number="149" hits="80" branch="false"/>
 								<line number="152" hits="0" branch="false"/>
 								<line number="153" hits="0" branch="false"/>
-								<line number="154" hits="96" branch="false"/>
-								<line number="156" hits="96" branch="false"/>
+								<line number="154" hits="138" branch="false"/>
+								<line number="156" hits="138" branch="false"/>
 							</lines>
 						</method>
 					</methods>
 					<lines>
-						<line number="27" hits="120" branch="false"/>
+						<line number="27" hits="174" branch="false"/>
 						<line number="30" hits="1" branch="false"/>
-						<line number="45" hits="12" branch="false"/>
-						<line number="48" hits="12" branch="false"/>
-						<line number="59" hits="12" branch="false"/>
-						<line number="60" hits="12" branch="false"/>
-						<line number="64" hits="12" branch="false"/>
-						<line number="65" hits="12" branch="true" condition-coverage="100 % (2/2)">
+						<line number="45" hits="18" branch="false"/>
+						<line number="48" hits="18" branch="false"/>
+						<line number="59" hits="18" branch="false"/>
+						<line number="60" hits="18" branch="false"/>
+						<line number="64" hits="18" branch="false"/>
+						<line number="65" hits="18" branch="true" condition-coverage="100 % (2/2)">
 							<conditions>
 								<condition number="0" type="jump" coverage="100 %"/>
 							</conditions>
 						</line>
-						<line number="66" hits="4" branch="false"/>
-						<line number="69" hits="12" branch="false"/>
-						<line number="71" hits="12" branch="false"/>
+						<line number="66" hits="6" branch="false"/>
+						<line number="69" hits="18" branch="false"/>
+						<line number="71" hits="18" branch="false"/>
 						<line number="72" hits="0" branch="false"/>
 						<line number="74" hits="0" branch="false"/>
 						<line number="76" hits="0" branch="false"/>
-						<line number="77" hits="12" branch="false"/>
-						<line number="79" hits="12" branch="true" condition-coverage="75 % (3/4)">
+						<line number="77" hits="18" branch="false"/>
+						<line number="79" hits="18" branch="true" condition-coverage="75 % (3/4)">
 							<conditions>
 								<condition number="0" type="jump" coverage="50 %"/>
 								<condition number="1" type="jump" coverage="100 %"/>
 							</conditions>
 						</line>
-						<line number="81" hits="2" branch="false"/>
-						<line number="82" hits="2" branch="false"/>
-						<line number="85" hits="12" branch="false"/>
-						<line number="88" hits="12" branch="true" condition-coverage="100 % (2/2)">
+						<line number="81" hits="3" branch="false"/>
+						<line number="82" hits="3" branch="false"/>
+						<line number="85" hits="18" branch="false"/>
+						<line number="88" hits="18" branch="true" condition-coverage="100 % (2/2)">
 							<conditions>
 								<condition number="0" type="jump" coverage="100 %"/>
 							</conditions>
 						</line>
-						<line number="90" hits="4" branch="false"/>
-						<line number="91" hits="4" branch="true" condition-coverage="50 % (1/2)">
+						<line number="90" hits="6" branch="false"/>
+						<line number="91" hits="6" branch="true" condition-coverage="50 % (1/2)">
 							<conditions>
 								<condition number="0" type="jump" coverage="50 %"/>
 							</conditions>
@@ -206,8 +212,8 @@
 						<line number="98" hits="0" branch="false"/>
 						<line number="100" hits="0" branch="false"/>
 						<line number="101" hits="0" branch="false"/>
-						<line number="102" hits="4" branch="false"/>
-						<line number="106" hits="12" branch="true" condition-coverage="50 % (1/2)">
+						<line number="102" hits="6" branch="false"/>
+						<line number="106" hits="18" branch="true" condition-coverage="50 % (1/2)">
 							<conditions>
 								<condition number="0" type="jump" coverage="50 %"/>
 							</conditions>
@@ -216,12 +222,12 @@
 						<line number="108" hits="0" branch="false"/>
 						<line number="109" hits="0" branch="false"/>
 						<line number="110" hits="0" branch="false"/>
-						<line number="112" hits="12" branch="false"/>
-						<line number="122" hits="96" branch="false"/>
-						<line number="123" hits="96" branch="false"/>
-						<line number="124" hits="96" branch="false"/>
-						<line number="125" hits="96" branch="false"/>
-						<line number="128" hits="96" branch="true" condition-coverage="100 % (2/2)">
+						<line number="112" hits="18" branch="false"/>
+						<line number="122" hits="138" branch="false"/>
+						<line number="123" hits="138" branch="false"/>
+						<line number="124" hits="138" branch="false"/>
+						<line number="125" hits="138" branch="false"/>
+						<line number="128" hits="138" branch="true" condition-coverage="100 % (2/2)">
 							<conditions>
 								<condition number="0" type="jump" coverage="100 %"/>
 							</conditions>
@@ -263,8 +269,8 @@
 						<line number="149" hits="80" branch="false"/>
 						<line number="152" hits="0" branch="false"/>
 						<line number="153" hits="0" branch="false"/>
-						<line number="154" hits="96" branch="false"/>
-						<line number="156" hits="96" branch="false"/>
+						<line number="154" hits="138" branch="false"/>
+						<line number="156" hits="138" branch="false"/>
 					</lines>
 				</class>
 				<class name="com.github.righettod.hvsc.annotation.validator.NoTagValidator" filename="com/github/righettod/hvsc/annotation/validator/NoTagValidator.java" line-rate="0.8181818181818182" branch-rate="1.0" complexity="2.5">
@@ -280,12 +286,12 @@
 						</method>
 						<method name="initialize" signature="(Lcom/github/righettod/hvsc/annotation/NoTag;)V" line-rate="1.0" branch-rate="1.0">
 							<lines>
-								<line number="35" hits="2" branch="false"/>
+								<line number="35" hits="3" branch="false"/>
 							</lines>
 						</method>
 						<method name="initialize" signature="(Ljava/lang/annotation/Annotation;)V" line-rate="1.0" branch-rate="1.0">
 							<lines>
-								<line number="22" hits="20" branch="false"/>
+								<line number="22" hits="29" branch="false"/>
 							</lines>
 						</method>
 						<method name="isValid" signature="(Ljava/lang/Object;Ljavax/validation/ConstraintValidatorContext;)Z" line-rate="1.0" branch-rate="1.0">
@@ -294,8 +300,8 @@
 						</method>
 						<method name="isValid" signature="(Ljava/lang/String;Ljavax/validation/ConstraintValidatorContext;)Z" line-rate="0.75" branch-rate="1.0">
 							<lines>
-								<line number="44" hits="16" branch="false"/>
-								<line number="47" hits="16" branch="true" condition-coverage="100 % (2/2)">
+								<line number="44" hits="23" branch="false"/>
+								<line number="47" hits="23" branch="true" condition-coverage="100 % (2/2)">
 									<conditions>
 										<condition number="0" type="jump" coverage="100 %"/>
 									</conditions>
@@ -309,17 +315,17 @@
 								</line>
 								<line number="53" hits="0" branch="false"/>
 								<line number="54" hits="0" branch="false"/>
-								<line number="55" hits="16" branch="false"/>
-								<line number="57" hits="16" branch="false"/>
+								<line number="55" hits="23" branch="false"/>
+								<line number="57" hits="23" branch="false"/>
 							</lines>
 						</method>
 					</methods>
 					<lines>
-						<line number="22" hits="20" branch="false"/>
+						<line number="22" hits="29" branch="false"/>
 						<line number="25" hits="1" branch="false"/>
-						<line number="35" hits="2" branch="false"/>
-						<line number="44" hits="16" branch="false"/>
-						<line number="47" hits="16" branch="true" condition-coverage="100 % (2/2)">
+						<line number="35" hits="3" branch="false"/>
+						<line number="44" hits="23" branch="false"/>
+						<line number="47" hits="23" branch="true" condition-coverage="100 % (2/2)">
 							<conditions>
 								<condition number="0" type="jump" coverage="100 %"/>
 							</conditions>
@@ -333,8 +339,160 @@
 						</line>
 						<line number="53" hits="0" branch="false"/>
 						<line number="54" hits="0" branch="false"/>
-						<line number="55" hits="16" branch="false"/>
-						<line number="57" hits="16" branch="false"/>
+						<line number="55" hits="23" branch="false"/>
+						<line number="57" hits="23" branch="false"/>
+					</lines>
+				</class>
+				<class name="com.github.righettod.hvsc.annotation.validator.OnlyPrintableCharacterValidator" filename="com/github/righettod/hvsc/annotation/validator/OnlyPrintableCharacterValidator.java" line-rate="0.9090909090909091" branch-rate="0.6875" complexity="13.0">
+					<methods>
+						<method name="&lt;clinit&gt;" signature="()V" line-rate="1.0" branch-rate="1.0">
+							<lines>
+								<line number="47" hits="1" branch="false"/>
+							</lines>
+						</method>
+						<method name="&lt;init&gt;" signature="()V" line-rate="1.0" branch-rate="1.0">
+							<lines>
+								<line number="50" hits="6" branch="false"/>
+							</lines>
+						</method>
+						<method name="initialize" signature="(Lcom/github/righettod/hvsc/annotation/OnlyPrintableCharacter;)V" line-rate="1.0" branch-rate="1.0">
+							<lines>
+								<line number="60" hits="6" branch="false"/>
+								<line number="61" hits="6" branch="false"/>
+							</lines>
+						</method>
+						<method name="initialize" signature="(Ljava/lang/annotation/Annotation;)V" line-rate="1.0" branch-rate="1.0">
+							<lines>
+								<line number="44" hits="58" branch="false"/>
+							</lines>
+						</method>
+						<method name="isValid" signature="(Ljava/lang/Object;Ljavax/validation/ConstraintValidatorContext;)Z" line-rate="1.0" branch-rate="1.0">
+							<lines>
+							</lines>
+						</method>
+						<method name="isValid" signature="(Ljava/lang/String;Ljavax/validation/ConstraintValidatorContext;)Z" line-rate="0.8823529411764706" branch-rate="0.6875">
+							<lines>
+								<line number="70" hits="46" branch="false"/>
+								<line number="71" hits="46" branch="false"/>
+								<line number="72" hits="46" branch="false"/>
+								<line number="76" hits="46" branch="true" condition-coverage="100 % (2/2)">
+									<conditions>
+										<condition number="0" type="jump" coverage="100 %"/>
+									</conditions>
+								</line>
+								<line number="78" hits="7" branch="false"/>
+								<line number="80" hits="74" branch="true" condition-coverage="100 % (2/2)">
+									<conditions>
+										<condition number="0" type="jump" coverage="100 %"/>
+									</conditions>
+								</line>
+								<line number="82" hits="71" branch="true" condition-coverage="100 % (2/2)">
+									<conditions>
+										<condition number="0" type="jump" coverage="100 %"/>
+									</conditions>
+								</line>
+								<line number="83" hits="6" branch="false"/>
+								<line number="87" hits="65" branch="false"/>
+								<line number="89" hits="65" branch="true" condition-coverage="62 % (25/40)">
+									<conditions>
+										<condition number="0" type="jump" coverage="100 %"/>
+										<condition number="1" type="jump" coverage="50 %"/>
+										<condition number="2" type="jump" coverage="100 %"/>
+										<condition number="3" type="jump" coverage="50 %"/>
+										<condition number="4" type="jump" coverage="50 %"/>
+										<condition number="5" type="jump" coverage="50 %"/>
+										<condition number="6" type="jump" coverage="50 %"/>
+										<condition number="7" type="jump" coverage="50 %"/>
+										<condition number="8" type="jump" coverage="50 %"/>
+										<condition number="9" type="jump" coverage="100 %"/>
+										<condition number="10" type="jump" coverage="50 %"/>
+										<condition number="11" type="jump" coverage="50 %"/>
+										<condition number="12" type="jump" coverage="50 %"/>
+										<condition number="13" type="jump" coverage="50 %"/>
+										<condition number="14" type="jump" coverage="50 %"/>
+										<condition number="15" type="jump" coverage="100 %"/>
+										<condition number="16" type="jump" coverage="50 %"/>
+										<condition number="17" type="jump" coverage="50 %"/>
+										<condition number="18" type="jump" coverage="50 %"/>
+										<condition number="19" type="jump" coverage="100 %"/>
+									</conditions>
+								</line>
+								<line number="94" hits="65" branch="true" condition-coverage="100 % (2/2)">
+									<conditions>
+										<condition number="0" type="jump" coverage="100 %"/>
+									</conditions>
+								</line>
+								<line number="95" hits="4" branch="false"/>
+								<line number="96" hits="4" branch="false"/>
+								<line number="100" hits="0" branch="false"/>
+								<line number="101" hits="0" branch="false"/>
+								<line number="102" hits="46" branch="false"/>
+								<line number="104" hits="46" branch="false"/>
+							</lines>
+						</method>
+					</methods>
+					<lines>
+						<line number="44" hits="58" branch="false"/>
+						<line number="47" hits="1" branch="false"/>
+						<line number="50" hits="6" branch="false"/>
+						<line number="60" hits="6" branch="false"/>
+						<line number="61" hits="6" branch="false"/>
+						<line number="70" hits="46" branch="false"/>
+						<line number="71" hits="46" branch="false"/>
+						<line number="72" hits="46" branch="false"/>
+						<line number="76" hits="46" branch="true" condition-coverage="100 % (2/2)">
+							<conditions>
+								<condition number="0" type="jump" coverage="100 %"/>
+							</conditions>
+						</line>
+						<line number="78" hits="7" branch="false"/>
+						<line number="80" hits="74" branch="true" condition-coverage="100 % (2/2)">
+							<conditions>
+								<condition number="0" type="jump" coverage="100 %"/>
+							</conditions>
+						</line>
+						<line number="82" hits="71" branch="true" condition-coverage="100 % (2/2)">
+							<conditions>
+								<condition number="0" type="jump" coverage="100 %"/>
+							</conditions>
+						</line>
+						<line number="83" hits="6" branch="false"/>
+						<line number="87" hits="65" branch="false"/>
+						<line number="89" hits="65" branch="true" condition-coverage="62 % (25/40)">
+							<conditions>
+								<condition number="0" type="jump" coverage="100 %"/>
+								<condition number="1" type="jump" coverage="50 %"/>
+								<condition number="2" type="jump" coverage="100 %"/>
+								<condition number="3" type="jump" coverage="50 %"/>
+								<condition number="4" type="jump" coverage="50 %"/>
+								<condition number="5" type="jump" coverage="50 %"/>
+								<condition number="6" type="jump" coverage="50 %"/>
+								<condition number="7" type="jump" coverage="50 %"/>
+								<condition number="8" type="jump" coverage="50 %"/>
+								<condition number="9" type="jump" coverage="100 %"/>
+								<condition number="10" type="jump" coverage="50 %"/>
+								<condition number="11" type="jump" coverage="50 %"/>
+								<condition number="12" type="jump" coverage="50 %"/>
+								<condition number="13" type="jump" coverage="50 %"/>
+								<condition number="14" type="jump" coverage="50 %"/>
+								<condition number="15" type="jump" coverage="100 %"/>
+								<condition number="16" type="jump" coverage="50 %"/>
+								<condition number="17" type="jump" coverage="50 %"/>
+								<condition number="18" type="jump" coverage="50 %"/>
+								<condition number="19" type="jump" coverage="100 %"/>
+							</conditions>
+						</line>
+						<line number="94" hits="65" branch="true" condition-coverage="100 % (2/2)">
+							<conditions>
+								<condition number="0" type="jump" coverage="100 %"/>
+							</conditions>
+						</line>
+						<line number="95" hits="4" branch="false"/>
+						<line number="96" hits="4" branch="false"/>
+						<line number="100" hits="0" branch="false"/>
+						<line number="101" hits="0" branch="false"/>
+						<line number="102" hits="46" branch="false"/>
+						<line number="104" hits="46" branch="false"/>
 					</lines>
 				</class>
 			</classes>
