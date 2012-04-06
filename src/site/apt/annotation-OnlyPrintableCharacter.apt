@@ -1,0 +1,17 @@
+           ------
+           Annotation OnlyPrintableCharacter
+           ------
+             	                                        
+How to use annotation 'OnlyPrintableCharacter'.
+
+	The annotation is named "@OnlyPrintableCharacter" and validate presence of non printable character into a string.
+	
+	It have the following specific attribute:
+	
+	* acceptedNonPrintableCharacterSet.
+	
+	[]
+	
+	"<<acceptedNonPrintableCharacterSet>>" attribute is used to define a list (as char array through a string) of non printable character that are accepted (exception).
+	
+	Ex: "\\r \\t \\n "

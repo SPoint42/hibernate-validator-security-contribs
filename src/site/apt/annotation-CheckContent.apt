@@ -1,5 +1,5 @@
            ------
-           Annotations
+           Annotation CheckContent
            ------
              	                                        
 How to use annotation 'CheckContent'.
@@ -55,12 +55,3 @@ How to use annotation 'CheckContent'.
 	
 	
 	"<<whitelistLocale>>" attribute is used to indicate the locale to used for load bundle (property file) containing the character whitelist (if no locale is specified then the validaor take the default runtime locale).
-
-=====================
-
-How to use annotation 'NoTag'.
-
-	The annotation is named "@NoTag" and validate that a string do not contains any HTML/XML tag.
-
-	It have no specific attributes.
-	

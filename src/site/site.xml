@@ -15,10 +15,12 @@
 	</skin>
 
 	<body>
-	 	<menu name="Documentation">
-	 		<item name="Annotations" href="annotations.html"/>
-	 		<item name="Validation" href="validation.html"/>
-	 	</menu>
+		<menu name="Documentation">
+			<item name="Annotation : CheckContent" href="annotation-CheckContent.html" />
+			<item name="Annotation : NoTag" href="annotation-NoTag.html" />
+			<item name="Annotation : OnlyPrintableCharacter" href="annotation-OnlyPrintableCharacter.html" />
+			<item name="Validation" href="validation.html" />
+		</menu>
 		<menu ref="reports" />
 	</body>
 
@@ -28,9 +30,10 @@
 			<sideBarEnabled>true</sideBarEnabled>
 			<sourceLineNumbersEnabled>true</sourceLineNumbersEnabled>
 			<gitHub>
-				<projectId>righettod/hibernate-validator-security-contribs</projectId>
+				<projectId>righettod/hibernate-validator-security-contribs
+				</projectId>
 				<ribbonOrientation>right</ribbonOrientation>
-				<ribbonColor>black</ribbonColor>				
+				<ribbonColor>black</ribbonColor>
 			</gitHub>
 		</fluidoSkin>
 	</custom>
