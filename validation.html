@@ -79,6 +79,9 @@
                           <a href="annotation-OnlyPrintableCharacter.html" title="Annotation : OnlyPrintableCharacter">Annotation : OnlyPrintableCharacter</a>
             </li>
                   <li class="none">
+                          <a href="annotation-NoLdap.html" title="Annotation : NoLdap">Annotation : NoLdap</a>
+            </li>
+                  <li class="none">
             <strong>Validation</strong>
           </li>
           </ul>
@@ -109,7 +112,11 @@
         
         <div id="bodyColumn"  class="span9" >
                               
-          <div class="section"><h2>How to use validation. <a name="How_to_use_validation."></a></h2><p>To perform validation on an annoted bean instance, follow steps below:</p><ol style="list-style-type: decimal"><li>Obtains an &quot;javax.validation.Validator&quot; instance using &quot;javax.validation.Validation&quot; factory: <p>Validator val = Validation.buildDefaultValidatorFactory().getValidator();</p></li><li>Apply validation on target bean using created validator in order to obtains a &quot;java.util.Set&quot; of &quot;javax.validation.ConstraintViolation&quot; instances:<p>Set&lt;ConstraintViolation&lt;MyBeanClass&gt;&gt; constraintViolations = val.validate(bean);</p></li><li>Check if constraint violations exists using Set object obtained:<p>constraintViolations.isEmpty(); </p><p>constraintViolations.iterator();</p></li></ol><p>See <a href="./xref-test/index.html">unit tests sources code</a> for complete samples.</p></div>
+          <div class="section"><h2>How to use validation. <a name="How_to_use_validation."></a></h2><p>To perform validation on an annoted bean instance, follow steps below:</p><ol style="list-style-type: decimal"><li>Obtains an &quot;javax.validation.Validator&quot; instance using &quot;javax.validation.Validation&quot; factory: <div class="source"><pre class="prettyprint linenums">Validator val = Validation.buildDefaultValidatorFactory().getValidator();
+</pre></div></li><li>Apply validation on target bean using created validator in order to obtains a &quot;java.util.Set&quot; of &quot;javax.validation.ConstraintViolation&quot; instances:<div class="source"><pre class="prettyprint linenums">Set&lt;ConstraintViolation&lt;MyBeanClass&gt;&gt; constraintViolations = val.validate(bean);
+</pre></div></li><li>Check if constraint violations exists using Set object obtained:<div class="source"><pre class="prettyprint linenums">constraintViolations.isEmpty(); 
+constraintViolations.iterator();
+</pre></div></li></ol><p>See <a href="./xref-test/index.html">unit tests sources code</a> for complete samples.</p></div>
                   </div>
             </div>
       
