@@ -1,7 +1,5 @@
 package com.github.righettod.hvsc.test;
 
-import java.net.URLEncoder;
-import java.nio.charset.Charset;
 import java.util.Set;
 
 import javax.validation.ConstraintViolation;
@@ -12,7 +10,8 @@ import org.junit.Assert;
 import org.junit.Test;
 
 /**
- * Test cases for class "NoTagValidator".
+ * 
+ * Test cases for class "OnlyPrintableCharacterValidator".
  * 
  * Annotation is tested using JSR303 RI as normal API user...
  * 
@@ -20,21 +19,21 @@ import org.junit.Test;
  * 
  */
 @SuppressWarnings("static-method")
-public class NoTagValidatorTest {
+public class OnlyPrintableCharacterValidatorTest {
 
 	/** JSR303 validator */
 	private static final Validator VALIDATOR = Validation.buildDefaultValidatorFactory().getValidator();
 
 	/**
-	 * Test case for valid case
+	 * Test case for valid case : No special character
 	 * 
 	 * @throws Exception
 	 */
 	@Test
-	public void testCaseOK() throws Exception {
+	public void testCaseOK01() throws Exception {
 		// Create sample bean
 		SimpleBean bean = new SimpleBean();
-		bean.setData7("Hello World !!!");
+		bean.setData8("Hello-World_!!!");
 		// Apply validation
 		Set<ConstraintViolation<SimpleBean>> constraintViolations = VALIDATOR.validate(bean);
 		// Validate test
@@ -42,7 +41,39 @@ public class NoTagValidatorTest {
 	}
 
 	/**
-	 * Test case for invalid case
+	 * Test case for valid case : Use a '\n' that is specified in allowed character set on annotation
+	 * 
+	 * @throws Exception
+	 */
+	@Test
+	public void testCaseOK02() throws Exception {
+		// Create sample bean
+		SimpleBean bean = new SimpleBean();
+		bean.setData8("Hello\nWorld!!!\n");
+		// Apply validation
+		Set<ConstraintViolation<SimpleBean>> constraintViolations = VALIDATOR.validate(bean);
+		// Validate test
+		Assert.assertTrue(constraintViolations.isEmpty());
+	}
+
+	/**
+	 * Test case for valid case : Use '\t','\r',' ','\n' that are specified in allowed character set on annotation
+	 * 
+	 * @throws Exception
+	 */
+	@Test
+	public void testCaseOK03() throws Exception {
+		// Create sample bean
+		SimpleBean bean = new SimpleBean();
+		bean.setData9("Hello World\r!!\n!\t");
+		// Apply validation
+		Set<ConstraintViolation<SimpleBean>> constraintViolations = VALIDATOR.validate(bean);
+		// Validate test
+		Assert.assertTrue(constraintViolations.isEmpty());
+	}
+
+	/**
+	 * Test case for invalid case : Use a '\r' that is NOT specified in allowed character set on annotation
 	 * 
 	 * @throws Exception
 	 */
@@ -50,17 +81,17 @@ public class NoTagValidatorTest {
 	public void testCaseKO01() throws Exception {
 		// Create sample bean
 		SimpleBean bean = new SimpleBean();
-		bean.setData7("Hello <World !!!");
+		bean.setData8("Hello\rWorld!!!\r");
 		// Apply validation
 		Set<ConstraintViolation<SimpleBean>> constraintViolations = VALIDATOR.validate(bean);
 		// Validate test
 		Assert.assertTrue(!constraintViolations.isEmpty());
 		Assert.assertEquals(1, constraintViolations.size());
-		Assert.assertEquals("data7", constraintViolations.iterator().next().getPropertyPath().toString());
+		Assert.assertEquals("data8", constraintViolations.iterator().next().getPropertyPath().toString());
 	}
 
 	/**
-	 * Test case for invalid case
+	 * Test case for invalid case : Use a ' ' that is NOT specified in allowed character set on annotation
 	 * 
 	 * @throws Exception
 	 */
@@ -68,17 +99,17 @@ public class NoTagValidatorTest {
 	public void testCaseKO02() throws Exception {
 		// Create sample bean
 		SimpleBean bean = new SimpleBean();
-		bean.setData7(URLEncoder.encode("Hello <World !!!", Charset.defaultCharset().name()));
+		bean.setData8("Hello World!!!");
 		// Apply validation
 		Set<ConstraintViolation<SimpleBean>> constraintViolations = VALIDATOR.validate(bean);
 		// Validate test
 		Assert.assertTrue(!constraintViolations.isEmpty());
 		Assert.assertEquals(1, constraintViolations.size());
-		Assert.assertEquals("data7", constraintViolations.iterator().next().getPropertyPath().toString());
+		Assert.assertEquals("data8", constraintViolations.iterator().next().getPropertyPath().toString());
 	}
 
 	/**
-	 * Test case for invalid case
+	 * Test case for invalid case : Use a '\t' that is NOT specified in allowed character set on annotation
 	 * 
 	 * @throws Exception
 	 */
@@ -86,17 +117,17 @@ public class NoTagValidatorTest {
 	public void testCaseKO03() throws Exception {
 		// Create sample bean
 		SimpleBean bean = new SimpleBean();
-		bean.setData7("Hello World> !!!");
+		bean.setData8("Hello\tWorld!!!\t");
 		// Apply validation
 		Set<ConstraintViolation<SimpleBean>> constraintViolations = VALIDATOR.validate(bean);
 		// Validate test
 		Assert.assertTrue(!constraintViolations.isEmpty());
 		Assert.assertEquals(1, constraintViolations.size());
-		Assert.assertEquals("data7", constraintViolations.iterator().next().getPropertyPath().toString());
+		Assert.assertEquals("data8", constraintViolations.iterator().next().getPropertyPath().toString());
 	}
 
 	/**
-	 * Test case for invalid case
+	 * Test case for invalid case : Use '\t','\r',' ' that are NOT specified in allowed character set on annotation
 	 * 
 	 * @throws Exception
 	 */
@@ -104,13 +135,13 @@ public class NoTagValidatorTest {
 	public void testCaseKO04() throws Exception {
 		// Create sample bean
 		SimpleBean bean = new SimpleBean();
-		bean.setData7(URLEncoder.encode("Hello World> !!!", Charset.defaultCharset().name()));
+		bean.setData8("Hello World\r!!!\t");
 		// Apply validation
 		Set<ConstraintViolation<SimpleBean>> constraintViolations = VALIDATOR.validate(bean);
 		// Validate test
 		Assert.assertTrue(!constraintViolations.isEmpty());
 		Assert.assertEquals(1, constraintViolations.size());
-		Assert.assertEquals("data7", constraintViolations.iterator().next().getPropertyPath().toString());
+		Assert.assertEquals("data8", constraintViolations.iterator().next().getPropertyPath().toString());
 	}
 
 }

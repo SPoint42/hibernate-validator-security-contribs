@@ -2,6 +2,7 @@ package com.github.righettod.hvsc.test;
 
 import com.github.righettod.hvsc.annotation.CheckContent;
 import com.github.righettod.hvsc.annotation.NoTag;
+import com.github.righettod.hvsc.annotation.OnlyPrintableCharacter;
 
 /**
  * Simple bean to test annotation
@@ -38,6 +39,14 @@ public class SimpleBean {
 	/** noTag */
 	@NoTag
 	private String data7 = null;
+
+	/** onlyPrintableCharacter */
+	@OnlyPrintableCharacter(acceptedNonPrintableCharacterSet = "\n")
+	private String data8 = null;
+
+	/** onlyPrintableCharacter */
+	@OnlyPrintableCharacter(acceptedNonPrintableCharacterSet = "\n\r\t ")
+	private String data9 = null;
 
 	/**
 	 * Getter
@@ -170,6 +179,44 @@ public class SimpleBean {
 	 */
 	public void setData7(String data7) {
 		this.data7 = data7;
+	}
+
+	/**
+	 * Getter
+	 * 
+	 * @return the data8
+	 */
+	public String getData8() {
+		return this.data8;
+	}
+
+	/**
+	 * Setter : Only Printable Character
+	 * 
+	 * @param data8
+	 *        the data8 to set
+	 */
+	public void setData8(String data8) {
+		this.data8 = data8;
+	}
+
+	/**
+	 * Getter
+	 * 
+	 * @return the data9
+	 */
+	public String getData9() {
+		return this.data9;
+	}
+
+	/**
+	 * Setter : Only Printable Character
+	 * 
+	 * @param data9
+	 *        the data9 to set
+	 */
+	public void setData9(String data9) {
+		this.data9 = data9;
 	}
 
 }

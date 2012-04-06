@@ -43,7 +43,7 @@ public class NoTagValidator implements ConstraintValidator<NoTag, String> {
 	public boolean isValid(String value, ConstraintValidatorContext context) {
 		boolean isValidFlg = true;
 		try {
-			// Apply check only is value is not empty....
+			// Apply check only if value is not empty....
 			if (!StringUtils.isEmpty(value)) {
 				// Step 1 : Decode value using default charset
 				String decodedValue = URLDecoder.decode(value, Charset.defaultCharset().name());
