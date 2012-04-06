@@ -1,0 +1,10 @@
+           ------
+           Annotation NoLdap
+           ------
+             	                                        
+How to use annotation 'NoLdap'.
+
+	The annotation is named "@NoLdap" and validate that a string do not contains any character that can be interpreted in a LDAP filter expression.
+
+	It have no specific attributes.
+	
