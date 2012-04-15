@@ -12,7 +12,7 @@ This project is implemented using Maven (v3.x) structure.
 
 ## Project distribution/informations
 
-Type commad below to obtains project identity card:
+Type command below to obtains project identity card:
 
 <pre>mvn clean site</pre>
 
@@ -40,7 +40,7 @@ http://righettod.github.com/hibernate-validator-security-contribs
 <li>- Refactor documentation.
 
 
-Feel free to create a ticket in case of issues/remarks/features...
+Feel free to create a ticket for issues/remarks/features ;o)
 
 Kind regards,
 
