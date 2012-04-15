@@ -12,9 +12,13 @@ This project is implemented using Maven (v3.x) structure.
 
 ## Project distribution/informations
 
-<li>-  Type "mvn site" to obtains project identity card.
+Type commad below to obtains project identity card:
 
-<li>-  Type "mvn package" to obtains project binary distribution.
+<pre>mvn clean site</pre>
+
+Type command below to obtains project binary distribution:
+
+<pre>mvn clean package</pre>
 
 ## Issues tracking
 Issues are tracked on: 
@@ -35,7 +39,9 @@ http://righettod.github.com/hibernate-validator-security-contribs
 
 <li>- Refactor documentation.
 
+
 Feel free to create a ticket in case of issues/remarks/features...
 
 Kind regards,
+
 Dominique Righetto
