@@ -13,6 +13,7 @@ This project is implemented using Maven (v3.x) structure.
 ## Project distribution/informations
 
 <li>-  Type "mvn site" to obtains project identity card.
+
 <li>-  Type "mvn package" to obtains project binary distribution.
 
 ## Issues tracking
@@ -26,11 +27,12 @@ http://righettod.github.com/hibernate-validator-security-contribs
 ## Version notes
 ### Version 1.0.0
 
-<li> First official release.
+<li>- First official release.
 
 ### Version 1.1.0
 
 <li>- Add new annotations + unit tests.
+
 <li>- Refactor documentation.
 
 Feel free to create a ticket in case of issues/remarks/features...
