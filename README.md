@@ -28,12 +28,12 @@ https://github.com/righettod/hibernate-validator-security-contribs/issues
 Project documentation is available on:
 http://righettod.github.com/hibernate-validator-security-contribs
 
-## Version notes
-### Version 1.0.0
+## Version history
+### 1.0.0
 
 <li>- First official release.
 
-### Version 1.1.0
+### 1.1.0
 
 <li>- Add new annotations + unit tests.
 
