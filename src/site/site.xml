@@ -30,12 +30,14 @@
 			<topBarEnabled>false</topBarEnabled>
 			<sideBarEnabled>true</sideBarEnabled>
 			<sourceLineNumbersEnabled>true</sourceLineNumbersEnabled>
+			<!-- 
 			<gitHub>
 				<projectId>righettod/hibernate-validator-security-contribs
 				</projectId>
 				<ribbonOrientation>right</ribbonOrientation>
 				<ribbonColor>black</ribbonColor>
 			</gitHub>
+			-->
 		</fluidoSkin>
 	</custom>
 
