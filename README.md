@@ -29,15 +29,19 @@ Project documentation is available on:
 http://righettod.github.com/hibernate-validator-security-contribs
 
 ## Version history
-### 1.0.0
+### 1.0.0 (Released)
 
 <li>- First official release.
 
-### 1.1.0
+### 1.1.0 (Released)
 
 <li>- Add new annotations + unit tests.
 
 <li>- Refactor documentation.
+
+### 1.2.0 (Snapshot - Work in progress)
+
+<li>- Fix an issue in LDAP validator.
 
 - - -
 
