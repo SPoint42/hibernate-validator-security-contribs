@@ -25,7 +25,7 @@ public class NoLdapValidator implements ConstraintValidator<NoLdap, String> {
 	private static final Logger LOGGER = LoggerFactory.getLogger(NoLdapValidator.class);
 
 	/** List of special characters used into LDAP filter expression */
-	public static final String LDAP_FILTER_SPECIAL_CHARACTER_SET = "()&|=><~*/\\!";
+	public static final String LDAP_FILTER_SPECIAL_CHARACTER_SET = "()&|=><~*/\\!;,";
 
 	/**
 	 * {@inheritDoc}
