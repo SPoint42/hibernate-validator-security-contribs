@@ -99,6 +99,7 @@ public class OnlyPrintableCharacterValidator implements ConstraintValidator<Only
 			}
 		} catch (Exception e) {
 			LOGGER.error("Error during data validation !", e);
+			isValidFlg = false;
 		}
 
 		return isValidFlg;

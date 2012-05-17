@@ -1,0 +1,16 @@
+           ------
+           Annotation NoSmtp
+           ------
+             	                                        
+How to use annotation 'NoSmtp'.
+
+	The annotation is named "@NoSmtp" and validate that the string do not contains any character that can be interpreted by a mail server in a SMTP message.
+	
+	It have the following specific attribute:
+	
+	* includeNoStandardHeaders.
+	
+	[]
+	
+	"<<includeNoStandardHeaders>>" boolean attribute is used to specify if the validator must also check the non standart SMTP headers (headers begining with "X-*") presence (default is True).
+	

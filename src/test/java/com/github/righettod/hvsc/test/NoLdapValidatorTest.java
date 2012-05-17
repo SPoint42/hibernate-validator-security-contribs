@@ -28,7 +28,7 @@ public class NoLdapValidatorTest {
 	/**
 	 * Test case for valid case : No special character
 	 * 
-	 * @throws Exception
+	 * @throws java.lang.Exception
 	 */
 	@Test
 	public void testCaseOK() throws Exception {
@@ -45,7 +45,7 @@ public class NoLdapValidatorTest {
 	 * Test case for invalid case : Validate special list<br>
 	 * For better design i should create one test by character but i create one test for enhance maintainability.
 	 * 
-	 * @throws Exception
+	 * @throws java.lang.Exception
 	 */
 	@Test
 	public void testCaseKO() throws Exception {

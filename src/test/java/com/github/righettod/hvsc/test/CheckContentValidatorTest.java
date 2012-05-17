@@ -26,7 +26,7 @@ public class CheckContentValidatorTest {
 	/**
 	 * Test case for whitelist validation
 	 * 
-	 * @throws Exception
+	 * @throws java.lang.Exception
 	 */
 	@Test
 	public void testWhitelistCheck01CaseOK() throws Exception {
@@ -42,7 +42,7 @@ public class CheckContentValidatorTest {
 	/**
 	 * Test case for whitelist validation
 	 * 
-	 * @throws Exception
+	 * @throws java.lang.Exception
 	 */
 	@Test
 	public void testWhitelistCheck01CaseKO() throws Exception {
@@ -60,7 +60,7 @@ public class CheckContentValidatorTest {
 	/**
 	 * Test case for whitelist validation
 	 * 
-	 * @throws Exception
+	 * @throws java.lang.Exception
 	 */
 	@Test
 	public void testWhitelistCheck02CaseOK() throws Exception {
@@ -76,7 +76,7 @@ public class CheckContentValidatorTest {
 	/**
 	 * Test case for whitelist validation
 	 * 
-	 * @throws Exception
+	 * @throws java.lang.Exception
 	 */
 	@Test
 	public void testWhitelistCheck02CaseKO() throws Exception {
@@ -94,7 +94,7 @@ public class CheckContentValidatorTest {
 	/**
 	 * Test case for character continuous repetition limit validation
 	 * 
-	 * @throws Exception
+	 * @throws java.lang.Exception
 	 */
 	@Test
 	public void testCharacterRepetitionLimitCheck01CaseOK() throws Exception {
@@ -110,7 +110,7 @@ public class CheckContentValidatorTest {
 	/**
 	 * Test case for character continuous repetition limit validation
 	 * 
-	 * @throws Exception
+	 * @throws java.lang.Exception
 	 */
 	@Test
 	public void testCharacterRepetitionLimitCheck01CaseKO() throws Exception {
@@ -128,7 +128,7 @@ public class CheckContentValidatorTest {
 	/**
 	 * Test case for character continuous repetition limit + whitelist validation
 	 * 
-	 * @throws Exception
+	 * @throws java.lang.Exception
 	 */
 	@Test
 	public void testMultiCheck01CaseOK() throws Exception {
@@ -144,7 +144,7 @@ public class CheckContentValidatorTest {
 	/**
 	 * Test case for whitelist validation using locale
 	 * 
-	 * @throws Exception
+	 * @throws java.lang.Exception
 	 */
 	@Test
 	public void testWhitelistCheck03CaseOK() throws Exception {
@@ -160,7 +160,7 @@ public class CheckContentValidatorTest {
 	/**
 	 * Test case for whitelist validation using locale
 	 * 
-	 * @throws Exception
+	 * @throws java.lang.Exception
 	 */
 	@Test
 	public void testWhitelistCheck03CaseKO() throws Exception {
@@ -180,7 +180,7 @@ public class CheckContentValidatorTest {
 	 * In this test, if processing is ok, the whitelist used must be the "default identifier" <br>
 	 * coming from "default bundle" in which specified character are allowed.
 	 * 
-	 * @throws Exception
+	 * @throws java.lang.Exception
 	 */
 	@Test
 	public void testWhitelistCheck04CaseOK() throws Exception {
@@ -198,7 +198,7 @@ public class CheckContentValidatorTest {
 	 * In this test, if processing is ok, the whitelist used must be the "default identifier" <br>
 	 * coming from "default bundle" in which specified character is not allowed.
 	 * 
-	 * @throws Exception
+	 * @throws java.lang.Exception
 	 */
 	@Test
 	public void testWhitelistCheck04CaseKO() throws Exception {

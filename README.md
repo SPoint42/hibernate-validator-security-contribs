@@ -41,7 +41,11 @@ http://righettod.github.com/hibernate-validator-security-contribs
 
 ### 1.2.0 (Snapshot - Work in progress)
 
-<li>- Fix an issue in LDAP validator.
+<li>- Fix an issue in LDAP validator : Miss special character.
+
+<li>- Fix an issue in all validators : If an exception is throwed during the validation then the validation pass.
+
+<li>- Add an annotation to check SMTP injection.
 
 - - -
 

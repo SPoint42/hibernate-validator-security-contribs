@@ -52,6 +52,7 @@ public class NoTagValidator implements ConstraintValidator<NoTag, String> {
 			}
 		} catch (Exception e) {
 			LOGGER.error("Error during data validation !", e);
+			isValidFlg = false;
 		}
 
 		return isValidFlg;

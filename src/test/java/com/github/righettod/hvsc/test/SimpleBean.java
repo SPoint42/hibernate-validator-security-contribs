@@ -2,6 +2,7 @@ package com.github.righettod.hvsc.test;
 
 import com.github.righettod.hvsc.annotation.CheckContent;
 import com.github.righettod.hvsc.annotation.NoLdap;
+import com.github.righettod.hvsc.annotation.NoSmtp;
 import com.github.righettod.hvsc.annotation.NoTag;
 import com.github.righettod.hvsc.annotation.OnlyPrintableCharacter;
 
@@ -52,6 +53,14 @@ public class SimpleBean {
 	/** noLdap */
 	@NoLdap
 	private String data10 = null;
+
+	/** noSmtp */
+	@NoSmtp
+	private String data11 = null;
+
+	/** noSmtp */
+	@NoSmtp(includeNoStandardHeaders = false)
+	private String data12 = null;
 
 	/**
 	 * Getter
@@ -241,6 +250,44 @@ public class SimpleBean {
 	 */
 	public void setData10(String data10) {
 		this.data10 = data10;
+	}
+
+	/**
+	 * Getter
+	 * 
+	 * @return the data11
+	 */
+	public String getData11() {
+		return this.data11;
+	}
+
+	/**
+	 * Setter : No SMTP
+	 * 
+	 * @param data11
+	 *        the data11 to set
+	 */
+	public void setData11(String data11) {
+		this.data11 = data11;
+	}
+
+	/**
+	 * Getter
+	 * 
+	 * @return the data12
+	 */
+	public String getData12() {
+		return this.data12;
+	}
+
+	/**
+	 * Setter = No SMTP without non standard headers check
+	 * 
+	 * @param data12
+	 *        the data12 to set
+	 */
+	public void setData12(String data12) {
+		this.data12 = data12;
 	}
 
 }

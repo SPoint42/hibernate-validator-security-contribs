@@ -27,7 +27,7 @@ public class OnlyPrintableCharacterValidatorTest {
 	/**
 	 * Test case for valid case : No special character
 	 * 
-	 * @throws Exception
+	 * @throws java.lang.Exception
 	 */
 	@Test
 	public void testCaseOK01() throws Exception {
@@ -43,7 +43,7 @@ public class OnlyPrintableCharacterValidatorTest {
 	/**
 	 * Test case for valid case : Use a '\n' that is specified in allowed character set on annotation
 	 * 
-	 * @throws Exception
+	 * @throws java.lang.Exception
 	 */
 	@Test
 	public void testCaseOK02() throws Exception {
@@ -59,7 +59,7 @@ public class OnlyPrintableCharacterValidatorTest {
 	/**
 	 * Test case for valid case : Use '\t','\r',' ','\n' that are specified in allowed character set on annotation
 	 * 
-	 * @throws Exception
+	 * @throws java.lang.Exception
 	 */
 	@Test
 	public void testCaseOK03() throws Exception {
@@ -75,7 +75,7 @@ public class OnlyPrintableCharacterValidatorTest {
 	/**
 	 * Test case for invalid case : Use a '\r' that is NOT specified in allowed character set on annotation
 	 * 
-	 * @throws Exception
+	 * @throws java.lang.Exception
 	 */
 	@Test
 	public void testCaseKO01() throws Exception {
@@ -93,7 +93,7 @@ public class OnlyPrintableCharacterValidatorTest {
 	/**
 	 * Test case for invalid case : Use a ' ' that is NOT specified in allowed character set on annotation
 	 * 
-	 * @throws Exception
+	 * @throws java.lang.Exception
 	 */
 	@Test
 	public void testCaseKO02() throws Exception {
@@ -111,7 +111,7 @@ public class OnlyPrintableCharacterValidatorTest {
 	/**
 	 * Test case for invalid case : Use a '\t' that is NOT specified in allowed character set on annotation
 	 * 
-	 * @throws Exception
+	 * @throws java.lang.Exception
 	 */
 	@Test
 	public void testCaseKO03() throws Exception {
@@ -129,7 +129,7 @@ public class OnlyPrintableCharacterValidatorTest {
 	/**
 	 * Test case for invalid case : Use '\t','\r',' ' that are NOT specified in allowed character set on annotation
 	 * 
-	 * @throws Exception
+	 * @throws java.lang.Exception
 	 */
 	@Test
 	public void testCaseKO04() throws Exception {

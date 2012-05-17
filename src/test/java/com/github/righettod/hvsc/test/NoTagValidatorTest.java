@@ -28,7 +28,7 @@ public class NoTagValidatorTest {
 	/**
 	 * Test case for valid case
 	 * 
-	 * @throws Exception
+	 * @throws java.lang.Exception
 	 */
 	@Test
 	public void testCaseOK() throws Exception {
@@ -44,7 +44,7 @@ public class NoTagValidatorTest {
 	/**
 	 * Test case for invalid case
 	 * 
-	 * @throws Exception
+	 * @throws java.lang.Exception
 	 */
 	@Test
 	public void testCaseKO01() throws Exception {
@@ -62,7 +62,7 @@ public class NoTagValidatorTest {
 	/**
 	 * Test case for invalid case
 	 * 
-	 * @throws Exception
+	 * @throws java.lang.Exception
 	 */
 	@Test
 	public void testCaseKO02() throws Exception {
@@ -80,7 +80,7 @@ public class NoTagValidatorTest {
 	/**
 	 * Test case for invalid case
 	 * 
-	 * @throws Exception
+	 * @throws java.lang.Exception
 	 */
 	@Test
 	public void testCaseKO03() throws Exception {
@@ -98,7 +98,7 @@ public class NoTagValidatorTest {
 	/**
 	 * Test case for invalid case
 	 * 
-	 * @throws Exception
+	 * @throws java.lang.Exception
 	 */
 	@Test
 	public void testCaseKO04() throws Exception {

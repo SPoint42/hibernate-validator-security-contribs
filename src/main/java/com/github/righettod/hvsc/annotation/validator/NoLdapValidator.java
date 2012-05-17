@@ -60,6 +60,7 @@ public class NoLdapValidator implements ConstraintValidator<NoLdap, String> {
 			}
 		} catch (Exception e) {
 			LOGGER.error("Error during data validation !", e);
+			isValidFlg = false;
 		}
 
 		return isValidFlg;
