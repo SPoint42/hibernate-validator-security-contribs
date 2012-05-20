@@ -2,6 +2,7 @@ package com.github.righettod.hvsc.test;
 
 import com.github.righettod.hvsc.annotation.CheckContent;
 import com.github.righettod.hvsc.annotation.NoLdap;
+import com.github.righettod.hvsc.annotation.NoPathTraversal;
 import com.github.righettod.hvsc.annotation.NoSmtp;
 import com.github.righettod.hvsc.annotation.NoTag;
 import com.github.righettod.hvsc.annotation.OnlyPrintableCharacter;
@@ -61,6 +62,10 @@ public class SimpleBean {
 	/** noSmtp */
 	@NoSmtp(includeNoStandardHeaders = false)
 	private String data12 = null;
+
+	/** noPathTraversal */
+	@NoPathTraversal
+	private String data13 = null;
 
 	/**
 	 * Getter
@@ -288,6 +293,25 @@ public class SimpleBean {
 	 */
 	public void setData12(String data12) {
 		this.data12 = data12;
+	}
+
+	/**
+	 * Getter
+	 * 
+	 * @return the data13
+	 */
+	public String getData13() {
+		return this.data13;
+	}
+
+	/**
+	 * Setter = No Path Traversal
+	 * 
+	 * @param data13
+	 *        the data13 to set
+	 */
+	public void setData13(String data13) {
+		this.data13 = data13;
 	}
 
 }

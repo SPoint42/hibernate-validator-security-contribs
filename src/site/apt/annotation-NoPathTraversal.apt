@@ -1,0 +1,10 @@
+           ------
+           Annotation NoPathTraversal
+           ------
+             	                                        
+How to use annotation 'NoPathTraversal'.
+
+	The annotation is named "@NoPathTraversal" and validate that a string do not contains any character that can be interpreted into a system path resolution.
+
+	It have no specific attributes.
+	
