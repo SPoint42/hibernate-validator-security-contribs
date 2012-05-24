@@ -6,7 +6,7 @@
 	<version>1.2.0-SNAPSHOT</version>
 	<name>hibernate-validator-security-contribs</name>
 	<packaging>jar</packaging>
-	<description>This project aims at providing a set of content-checking constraint annotations, focused on security, using the JSR303 RI Hibernate Validation.</description>
+	<description>This project aims at providing a set of content-checking constraint annotations, focused on security, using the JSR303 RI Hibernate Validation.</description>	
 	<dependencies>
 		<dependency>
 			<groupId>org.hibernate</groupId>
@@ -221,6 +221,10 @@
 		<system>Github</system>
 		<url>https://github.com/righettod/hibernate-validator-security-contribs/issues</url>
 	</issueManagement>
+  <ciManagement>
+	<system>Jenkins</system>
+	<url>https://buildhive.cloudbees.com/job/righettod/job/hibernate-validator-security-contribs/</url>
+  </ciManagement>	
 	<scm>
 		<connection>scm:git:git@github.com:righettod/hibernate-validator-security-contribs.git</connection>
 		<developerConnection>scm:git:git@github.com:righettod/hibernate-validator-security-contribs.git</developerConnection>
