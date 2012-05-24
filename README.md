@@ -22,14 +22,17 @@ Type command below to obtains project binary distribution:
 
 ## Issues tracking
 Issues are tracked on: 
+
 https://github.com/righettod/hibernate-validator-security-contribs/issues
 
 ## Documentation
 Project documentation is available on:
+
 http://righettod.github.com/hibernate-validator-security-contribs
 
 ## Continuous integration
-Project is build at each commit using BuildHive
+Project is build at each commit using BuildHive:
+
 https://buildhive.cloudbees.com/job/righettod/job/hibernate-validator-security-contribs
 
 ## Version history
