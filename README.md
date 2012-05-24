@@ -28,6 +28,10 @@ https://github.com/righettod/hibernate-validator-security-contribs/issues
 Project documentation is available on:
 http://righettod.github.com/hibernate-validator-security-contribs
 
+## Continuous integration
+Project is build at each commit using BuildHive
+https://buildhive.cloudbees.com/job/righettod/job/hibernate-validator-security-contribs
+
 ## Version history
 ### 1.0.0 (Released)
 
