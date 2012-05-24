@@ -47,6 +47,8 @@ http://righettod.github.com/hibernate-validator-security-contribs
 
 <li>- Add an annotation to check SMTP injection.
 
+## Build status via BuildHive
+[![Build Status](https://buildhive.cloudbees.com/job/righettod/job/hibernate-validator-security-contribs/badge/icon)](https://buildhive.cloudbees.com/job/righettod/job/hibernate-validator-security-contribs/)
 - - -
 
 Feel free to create a ticket for issues/remarks/features ;o)
