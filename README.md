@@ -21,7 +21,7 @@ Type command below to obtains project binary distribution:
 <pre>mvn clean package</pre>
 
 Artefacts are released into official Maven repositories (see project documentation) but 
-you can download night build versions from continuous integration server:
+you can download night build versions from continuous integration server on:
 
 https://buildhive.cloudbees.com/job/righettod/job/hibernate-validator-security-contribs/lastStableBuild/com.github.righettod$hibernate-validator-security-contribs/
 
@@ -36,7 +36,7 @@ Project documentation is available on:
 http://righettod.github.com/hibernate-validator-security-contribs
 
 ## Continuous integration
-Project is build at each commit using BuildHive:
+Project is build at each commit using BuildHive on:
 
 https://buildhive.cloudbees.com/job/righettod/job/hibernate-validator-security-contribs
 
