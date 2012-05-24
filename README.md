@@ -35,6 +35,8 @@ Project is build at each commit using BuildHive:
 
 https://buildhive.cloudbees.com/job/righettod/job/hibernate-validator-security-contribs
 
+[![Build Status](https://buildhive.cloudbees.com/job/righettod/job/hibernate-validator-security-contribs/badge/icon)](https://buildhive.cloudbees.com/job/righettod/job/hibernate-validator-security-contribs/)
+
 ## Version history
 ### 1.0.0 (Released)
 
@@ -54,8 +56,6 @@ https://buildhive.cloudbees.com/job/righettod/job/hibernate-validator-security-c
 
 <li>- Add an annotation to check SMTP injection.
 
-## Build status via BuildHive
-[![Build Status](https://buildhive.cloudbees.com/job/righettod/job/hibernate-validator-security-contribs/badge/icon)](https://buildhive.cloudbees.com/job/righettod/job/hibernate-validator-security-contribs/)
 - - -
 
 Feel free to create a ticket for issues/remarks/features ;o)
