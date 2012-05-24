@@ -56,6 +56,8 @@ https://buildhive.cloudbees.com/job/righettod/job/hibernate-validator-security-c
 
 <li>- Add an annotation to check SMTP injection.
 
+<li>- Add an annotation to check Path Traversal injection.
+
 - - -
 
 Feel free to create a ticket for issues/remarks/features ;o)
