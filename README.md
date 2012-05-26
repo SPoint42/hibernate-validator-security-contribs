@@ -20,10 +20,10 @@ Type command below to obtains project binary distribution:
 
 <pre>mvn clean package</pre>
 
-Artefacts are released into official Maven repositories (see project documentation) but 
-you can download night build versions from continuous integration server on:
+Artefacts are published into official Maven repositories (see project documentation) but 
+you can download development built versions from continuous integration server on:
 
-https://buildhive.cloudbees.com/job/righettod/job/hibernate-validator-security-contribs/lastStableBuild/com.github.righettod$hibernate-validator-security-contribs/
+https://righettod.ci.cloudbees.com/job/HibernateValidatorSecurityContribs
 
 ## Issues tracking
 Issues are tracked on: 
@@ -36,11 +36,9 @@ Project documentation is available on:
 http://righettod.github.com/hibernate-validator-security-contribs
 
 ## Continuous integration
-Project is build at each commit using BuildHive on:
+Project is built at each commit using Jenkins on CloudBees on:
 
-https://buildhive.cloudbees.com/job/righettod/job/hibernate-validator-security-contribs
-
-[![Build Status](https://buildhive.cloudbees.com/job/righettod/job/hibernate-validator-security-contribs/badge/icon)](https://buildhive.cloudbees.com/job/righettod/job/hibernate-validator-security-contribs/)
+https://righettod.ci.cloudbees.com/job/HibernateValidatorSecurityContribs
 
 ## Version history
 ### 1.0.0 (Released)
