@@ -222,8 +222,8 @@
 		<url>https://github.com/righettod/hibernate-validator-security-contribs/issues</url>
 	</issueManagement>
   <ciManagement>
-	<system>Jenkins</system>
-	<url>https://buildhive.cloudbees.com/job/righettod/job/hibernate-validator-security-contribs/</url>
+	<system>CloudBees-Jenkins</system>
+	<url>https://righettod.ci.cloudbees.com/job/HibernateValidatorSecurityContribs/</url>
   </ciManagement>	
 	<scm>
 		<connection>scm:git:git@github.com:righettod/hibernate-validator-security-contribs.git</connection>
