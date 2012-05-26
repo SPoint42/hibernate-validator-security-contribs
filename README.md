@@ -10,6 +10,8 @@ reason that i decided to use it as framework.
 
 This project is implemented using Maven (v3.x) structure.
 
+![Built on CloudBees](http://web-static-cloudfront.s3.amazonaws.com/images/badges/BuiltOnDEV.png)
+
 ## Project distribution & informations
 
 Type command below to obtains project identity card:
