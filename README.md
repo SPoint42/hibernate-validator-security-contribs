@@ -31,9 +31,9 @@ Issues are tracked on:
 https://github.com/righettod/hibernate-validator-security-contribs/issues
 
 ## Documentation
-Project documentation is available on:
+Project documentation is available on continuous integration server on:
 
-http://righettod.github.com/hibernate-validator-security-contribs
+https://righettod.ci.cloudbees.com/job/HibernateValidatorSecurityContribs/site
 
 ## Continuous integration
 Project is built at each commit using Jenkins on CloudBees on:
