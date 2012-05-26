@@ -222,7 +222,7 @@
 		<url>https://github.com/righettod/hibernate-validator-security-contribs/issues</url>
 	</issueManagement>
   <ciManagement>
-	<system>CloudBees-Jenkins</system>
+	<system>CloudBeesJenkins</system>
 	<url>https://righettod.ci.cloudbees.com/job/HibernateValidatorSecurityContribs/</url>
   </ciManagement>	
 	<scm>
