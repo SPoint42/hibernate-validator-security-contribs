@@ -64,6 +64,8 @@ https://righettod.ci.cloudbees.com/job/HibernateValidatorSecurityContribs
 
 <li>- Add an annotation to check Path Traversal injection.
 
+<li>- Add an annotation to check OS commands chaining.
+
 - - -
 
 Feel free to create a ticket for issues/remarks/features ;o)
