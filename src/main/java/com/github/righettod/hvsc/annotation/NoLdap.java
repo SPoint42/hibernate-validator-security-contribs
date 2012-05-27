@@ -20,8 +20,6 @@ import com.github.righettod.hvsc.annotation.validator.NoLdapValidator;
  * 
  * @author Dominique Righetto (dominique.righetto@gmail.com)
  * 
- * @see "http://docs.jboss.org/hibernate/stable/validator/reference/en-US/html_single/#validator-customconstraints"
- * @see "http://docs.jboss.org/hibernate/stable/validator/reference/en-US/html_single/#table-spec-constraints"
  * 
  */
 @Target({ METHOD, FIELD, ANNOTATION_TYPE })

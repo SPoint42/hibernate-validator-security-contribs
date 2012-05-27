@@ -12,10 +12,11 @@ import java.lang.annotation.Target;
 import javax.validation.Constraint;
 import javax.validation.Payload;
 
-import com.github.righettod.hvsc.annotation.validator.OnlyPrintableCharacterValidator;
+import com.github.righettod.hvsc.annotation.validator.NoOSCommandsChainingValidator;
 
 /**
- * Define annotation to validate content of a string, check that the string contains only printable characters.
+ * Define annotation to validate content of a string, <br>
+ * check that the string do not contains any character that can be interpreted by an OS shell to chain OS commands.
  * 
  * @author Dominique Righetto (dominique.righetto@gmail.com)
  * 
@@ -23,14 +24,14 @@ import com.github.righettod.hvsc.annotation.validator.OnlyPrintableCharacterVali
  */
 @Target({ METHOD, FIELD, ANNOTATION_TYPE })
 @Retention(RUNTIME)
-@Constraint(validatedBy = OnlyPrintableCharacterValidator.class)
+@Constraint(validatedBy = NoOSCommandsChainingValidator.class)
 @Documented
-public @interface OnlyPrintableCharacter {
+public @interface NoOSCommandsChaining {
 
 	/* Attributes required by the 'Bean Validation API' */
 
 	/** Message that returns the default key for creating error messages in case the constraint is violated. */
-	String message() default "{com.github.righettod.hvsc.annotation.onlyprintablecharacter}";
+	String message() default "{com.github.righettod.hvsc.annotation.nooscommandschaining}";
 
 	/** Allows the specification of validation groups, to which this constraint belongs. */
 	Class<?>[] groups() default {};
@@ -38,8 +39,5 @@ public @interface OnlyPrintableCharacter {
 	/** Can be used by clients of the Bean Validation API to assign custom payload objects to a constraint. This attribute is not used by the API itself. */
 	Class<? extends Payload>[] payload() default {};
 
-	/* Annotation specific attributes */
-
-	/** List (as char array) of non printable character that are accepted (exception) */
-	String acceptedNonPrintableCharacterSet() default "";
+	/* No Annotation specific attributes */
 }

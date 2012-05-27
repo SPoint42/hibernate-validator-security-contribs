@@ -2,6 +2,7 @@ package com.github.righettod.hvsc.test;
 
 import com.github.righettod.hvsc.annotation.CheckContent;
 import com.github.righettod.hvsc.annotation.NoLdap;
+import com.github.righettod.hvsc.annotation.NoOSCommandsChaining;
 import com.github.righettod.hvsc.annotation.NoPathTraversal;
 import com.github.righettod.hvsc.annotation.NoSmtp;
 import com.github.righettod.hvsc.annotation.NoTag;
@@ -66,6 +67,10 @@ public class SimpleBean {
 	/** noPathTraversal */
 	@NoPathTraversal
 	private String data13 = null;
+
+	/** noOSCommandChaining */
+	@NoOSCommandsChaining
+	private String data14 = null;
 
 	/**
 	 * Getter
@@ -312,6 +317,25 @@ public class SimpleBean {
 	 */
 	public void setData13(String data13) {
 		this.data13 = data13;
+	}
+
+	/**
+	 * Getter
+	 * 
+	 * @return the data14
+	 */
+	public String getData14() {
+		return this.data14;
+	}
+
+	/**
+	 * Setter = No OS Command Chaining
+	 * 
+	 * @param data14
+	 *        the data14 to set
+	 */
+	public void setData14(String data14) {
+		this.data14 = data14;
 	}
 
 }

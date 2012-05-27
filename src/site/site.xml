@@ -22,6 +22,7 @@
 			<item name="Annotation : NoLdap" href="annotation-NoLdap.html" />
 			<item name="Annotation : NoSmtp" href="annotation-NoSmtp.html" />
 			<item name="Annotation : NoPathTraversal" href="annotation-NoPathTraversal.html" />
+			<item name="Annotation : NoOSCommandsChaining" href="annotation-NoOSCommandsChaining.html" />
 			<item name="Validation" href="validation.html" />
 		</menu>
 		<menu ref="reports" />

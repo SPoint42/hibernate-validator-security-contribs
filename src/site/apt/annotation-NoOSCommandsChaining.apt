@@ -1,0 +1,10 @@
+           ------
+           Annotation NoOSCommandsChaining
+           ------
+             	                                        
+How to use annotation 'NoOSCommandsChaining'.
+
+	The annotation is named "@NoOSCommandsChaining" and validate that a string do not contains any character that can be interpreted by an OS shell to chain OS commands.
+
+	It have no specific attributes.
+	
