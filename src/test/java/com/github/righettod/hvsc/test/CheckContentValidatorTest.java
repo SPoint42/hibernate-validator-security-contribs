@@ -9,6 +9,8 @@ import javax.validation.Validator;
 import org.junit.Assert;
 import org.junit.Test;
 
+import com.github.righettod.hvsc.test.vo.SimpleBean;
+
 /**
  * Test cases for class "CheckContentValidator".
  * 

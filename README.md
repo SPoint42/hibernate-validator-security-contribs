@@ -66,6 +66,10 @@ https://righettod.ci.cloudbees.com/job/HibernateValidatorSecurityContribs
 
 <li>- Add an annotation to check OS commands chaining.
 
+<li>- Add an base class to add bean validity check features by inheritance.
+
+<li>- Change validation checking rules of the NoTag annotation validator.
+
 - - -
 
 Feel free to create a ticket for issues/remarks/features ;o)

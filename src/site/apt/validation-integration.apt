@@ -1,0 +1,28 @@
+           ------
+           Integration
+           ------
+	
+Add bean validity check features by inheritance. 
+	
+	To add bean validity check features by inheritance, follow steps below:
+	
+	[[1]] Made your bean class inherits from the base class "<<com.github.righettod.hvsc.integration.SecurityAscertainableBean>>": 
+
++--------------------------------------------------------------------------+		
+public class MyBean extends SecurityAscertainableBean<MyBean> { ... }
++--------------------------------------------------------------------------+		
+	
+	[[2]] Use inherited methods to perform validation:
+	
++--------------------------------------------------------------------------+
+MyBean bean  = ....
+Set<ConstraintViolation<SecurityAscertainableBean<MyBean>>> constraintViolations = bean.ascertain();
+boolean isValid = bean.isSuccessfulAudit()
++--------------------------------------------------------------------------+		
+		
+	[[3]] Check if constraint violations exists using Set/Boolean object obtained
+
+	[]
+	
+	See {{{./xref-test/index.html}unit tests sources code}} for complete samples.
+			

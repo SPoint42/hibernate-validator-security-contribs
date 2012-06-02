@@ -48,7 +48,7 @@ public class NoTagValidator implements ConstraintValidator<NoTag, String> {
 				// Step 1 : Decode value using default charset
 				String decodedValue = URLDecoder.decode(value, Charset.defaultCharset().name());
 				// Step 2 : Check tag presence
-				isValidFlg = ((decodedValue.indexOf("<") == -1) && (decodedValue.indexOf(">") == -1));
+				isValidFlg = (decodedValue.indexOf("/>") == -1);
 			}
 		} catch (Exception e) {
 			LOGGER.error("Error during data validation !", e);

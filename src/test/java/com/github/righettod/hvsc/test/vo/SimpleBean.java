@@ -1,4 +1,4 @@
-package com.github.righettod.hvsc.test;
+package com.github.righettod.hvsc.test.vo;
 
 import com.github.righettod.hvsc.annotation.CheckContent;
 import com.github.righettod.hvsc.annotation.NoLdap;

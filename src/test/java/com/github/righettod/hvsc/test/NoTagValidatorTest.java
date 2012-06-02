@@ -11,6 +11,8 @@ import javax.validation.Validator;
 import org.junit.Assert;
 import org.junit.Test;
 
+import com.github.righettod.hvsc.test.vo.SimpleBean;
+
 /**
  * Test cases for class "NoTagValidator".
  * 
@@ -34,7 +36,7 @@ public class NoTagValidatorTest {
 	public void testCaseOK() throws Exception {
 		// Create sample bean
 		SimpleBean bean = new SimpleBean();
-		bean.setData7("Hello World !!!");
+		bean.setData7("Hello <World !!!");
 		// Apply validation
 		Set<ConstraintViolation<SimpleBean>> constraintViolations = VALIDATOR.validate(bean);
 		// Validate test
@@ -50,7 +52,7 @@ public class NoTagValidatorTest {
 	public void testCaseKO01() throws Exception {
 		// Create sample bean
 		SimpleBean bean = new SimpleBean();
-		bean.setData7("Hello <World !!!");
+		bean.setData7("Hello World/> !!!");
 		// Apply validation
 		Set<ConstraintViolation<SimpleBean>> constraintViolations = VALIDATOR.validate(bean);
 		// Validate test
@@ -68,43 +70,7 @@ public class NoTagValidatorTest {
 	public void testCaseKO02() throws Exception {
 		// Create sample bean
 		SimpleBean bean = new SimpleBean();
-		bean.setData7(URLEncoder.encode("Hello <World !!!", Charset.defaultCharset().name()));
-		// Apply validation
-		Set<ConstraintViolation<SimpleBean>> constraintViolations = VALIDATOR.validate(bean);
-		// Validate test
-		Assert.assertTrue(!constraintViolations.isEmpty());
-		Assert.assertEquals(1, constraintViolations.size());
-		Assert.assertEquals("data7", constraintViolations.iterator().next().getPropertyPath().toString());
-	}
-
-	/**
-	 * Test case for invalid case
-	 * 
-	 * @throws java.lang.Exception
-	 */
-	@Test
-	public void testCaseKO03() throws Exception {
-		// Create sample bean
-		SimpleBean bean = new SimpleBean();
-		bean.setData7("Hello World> !!!");
-		// Apply validation
-		Set<ConstraintViolation<SimpleBean>> constraintViolations = VALIDATOR.validate(bean);
-		// Validate test
-		Assert.assertTrue(!constraintViolations.isEmpty());
-		Assert.assertEquals(1, constraintViolations.size());
-		Assert.assertEquals("data7", constraintViolations.iterator().next().getPropertyPath().toString());
-	}
-
-	/**
-	 * Test case for invalid case
-	 * 
-	 * @throws java.lang.Exception
-	 */
-	@Test
-	public void testCaseKO04() throws Exception {
-		// Create sample bean
-		SimpleBean bean = new SimpleBean();
-		bean.setData7(URLEncoder.encode("Hello World> !!!", Charset.defaultCharset().name()));
+		bean.setData7(URLEncoder.encode("Hello World/> !!!", Charset.defaultCharset().name()));
 		// Apply validation
 		Set<ConstraintViolation<SimpleBean>> constraintViolations = VALIDATOR.validate(bean);
 		// Validate test

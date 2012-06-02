@@ -10,6 +10,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 import com.github.righettod.hvsc.annotation.validator.NoSmtpValidator;
+import com.github.righettod.hvsc.test.vo.SimpleBean;
 
 /**
  * Test cases for class "NoSmtpValidator".

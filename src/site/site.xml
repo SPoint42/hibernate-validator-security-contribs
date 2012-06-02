@@ -11,7 +11,7 @@
 	<skin>
 		<groupId>org.apache.maven.skins</groupId>
 		<artifactId>maven-fluido-skin</artifactId>
-		<version>1.2</version>
+		<version>1.2.1</version>
 	</skin>
 
 	<body>
@@ -24,6 +24,7 @@
 			<item name="Annotation : NoPathTraversal" href="annotation-NoPathTraversal.html" />
 			<item name="Annotation : NoOSCommandsChaining" href="annotation-NoOSCommandsChaining.html" />
 			<item name="Validation" href="validation.html" />
+			<item name="Integration" href="validation-integration.html" />
 		</menu>
 		<menu ref="reports" />
 	</body>
@@ -41,6 +42,8 @@
 				<ribbonColor>black</ribbonColor>
 			</gitHub>
 			-->
+			<facebookLike />
+			<googlePlusOne />
 		</fluidoSkin>
 	</custom>
 
