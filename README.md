@@ -54,7 +54,7 @@ https://righettod.ci.cloudbees.com/job/HibernateValidatorSecurityContribs
 
 <li>- Refactor documentation.
 
-### 1.2.0 (Snapshot - Work in progress)
+### 1.2.0 (Released)
 
 <li>- Fix an issue in LDAP validator : Miss special character.
 
