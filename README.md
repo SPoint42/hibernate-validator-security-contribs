@@ -14,7 +14,7 @@ This project is implemented using Maven (v3.x) structure.
 
 ![Hosted on GitHub](http://alx.github.com/gitbook/assets/images/github.png)
 
-![Powered by Logica](http://biginnovationcentre.com/Assets/Images/Partners/Logica%20logo%20square.png)
+![Powered by Logica](http://www.logica.com/img/interface/logo.png)
 
 ## Project distribution & informations
 
