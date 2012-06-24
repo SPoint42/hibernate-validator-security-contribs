@@ -207,7 +207,7 @@
 			<email>dominique.righetto@gmail.com</email>
 			<url>https://github.com/righettod/hibernate-validator-security-contribs</url>
 			<roles>
-				<role>developer</role>
+				<role>Main geek</role>
 			</roles>
 			<timezone>+1</timezone>
 		</developer>
@@ -227,8 +227,8 @@
 	</scm>
 	<url>https://github.com/righettod/hibernate-validator-security-contribs</url>
 	<organization>
-		<name>Personal</name>
-		<url>http://righettod.github.com</url>
+		<name>Logica (Luxemburg Office)</name>
+		<url>http://www.facebook.com/logicalux</url>
 	</organization>
 	<distributionManagement>
 		<repository>
