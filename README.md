@@ -45,17 +45,12 @@ Project is built at each commit using Jenkins on CloudBees on:
 https://righettod.ci.cloudbees.com/job/HibernateValidatorSecurityContribs
 
 ## Version history
-### 1.0.0 (Released)
 
-<li>- First official release.
+### 1.2.1 (Status : Release in progress)
 
-### 1.1.0 (Released)
+<li>- Fix an issue in all validators : Manage case when input data is URL encoded X times.
 
-<li>- Add new annotations + unit tests.
-
-<li>- Refactor documentation.
-
-### 1.2.0 (Released)
+### 1.2.0 (Status : Released)
 
 <li>- Fix an issue in LDAP validator : Miss special character.
 
@@ -70,6 +65,16 @@ https://righettod.ci.cloudbees.com/job/HibernateValidatorSecurityContribs
 <li>- Add an base class to add bean validity check features by inheritance.
 
 <li>- Change validation checking rules of the NoTag annotation validator.
+
+### 1.1.0 (Status : Released)
+
+<li>- Add new annotations + unit tests.
+
+<li>- Refactor documentation.
+
+### 1.0.0 (Status : Released)
+
+<li>- First official release.
 
 - - -
 

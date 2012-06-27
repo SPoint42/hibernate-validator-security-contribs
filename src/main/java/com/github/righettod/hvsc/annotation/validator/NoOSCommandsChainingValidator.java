@@ -1,6 +1,5 @@
 package com.github.righettod.hvsc.annotation.validator;
 
-import java.net.URLDecoder;
 import java.nio.charset.Charset;
 
 import javax.validation.ConstraintValidator;
@@ -22,7 +21,7 @@ import com.github.righettod.hvsc.annotation.NoOSCommandsChaining;
  * @see "http://www.cyberciti.biz/tips/run-several-commands-sequence-all-at-once.html"
  * 
  */
-public class NoOSCommandsChainingValidator implements ConstraintValidator<NoOSCommandsChaining, String> {
+public class NoOSCommandsChainingValidator extends BaseValidator implements ConstraintValidator<NoOSCommandsChaining, String> {
 
 	/** Class logger */
 	private static final Logger LOGGER = LoggerFactory.getLogger(NoOSCommandsChainingValidator.class);
@@ -52,7 +51,7 @@ public class NoOSCommandsChainingValidator implements ConstraintValidator<NoOSCo
 			// Apply check only if value is not empty....
 			if (!StringUtils.isEmpty(value)) {
 				// Step 1 : Decode value using default charset
-				String decodedValue = URLDecoder.decode(value, Charset.defaultCharset().name());
+				String decodedValue = decode(value, Charset.defaultCharset().name());
 				// Step 2 : Check character list
 				for (char c : decodedValue.toCharArray()) {
 					if (CMD_CHAINING_SPECIAL_CHARACTER_SET.indexOf(c) != -1) {

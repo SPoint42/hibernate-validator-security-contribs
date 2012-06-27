@@ -22,7 +22,6 @@ import static java.lang.Character.TITLECASE_LETTER;
 import static java.lang.Character.UPPERCASE_LETTER;
 import static java.lang.Character.getType;
 
-import java.net.URLDecoder;
 import java.nio.charset.Charset;
 
 import javax.validation.ConstraintValidator;
@@ -41,7 +40,7 @@ import com.github.righettod.hvsc.annotation.OnlyPrintableCharacter;
  * @see "http://docs.jboss.org/hibernate/stable/validator/reference/en-US/html_single/#validator-customconstraints"
  * 
  */
-public class OnlyPrintableCharacterValidator implements ConstraintValidator<OnlyPrintableCharacter, String> {
+public class OnlyPrintableCharacterValidator extends BaseValidator implements ConstraintValidator<OnlyPrintableCharacter, String> {
 
 	/** Class logger */
 	private static final Logger LOGGER = LoggerFactory.getLogger(OnlyPrintableCharacterValidator.class);
@@ -75,7 +74,7 @@ public class OnlyPrintableCharacterValidator implements ConstraintValidator<Only
 			// Apply check only if value is not empty....
 			if (!StringUtils.isEmpty(value)) {
 				// Step 1 : Decode value using default charset
-				String decodedValue = URLDecoder.decode(value, Charset.defaultCharset().name());
+				String decodedValue = decode(value, Charset.defaultCharset().name());
 				// Step 2 : Check each character
 				for (char c : decodedValue.toCharArray()) {
 					// Check if current character is in allowed list

@@ -1,6 +1,5 @@
 package com.github.righettod.hvsc.annotation.validator;
 
-import java.net.URLDecoder;
 import java.nio.charset.Charset;
 
 import javax.validation.ConstraintValidator;
@@ -19,7 +18,7 @@ import com.github.righettod.hvsc.annotation.NoTag;
  * @see "http://docs.jboss.org/hibernate/stable/validator/reference/en-US/html_single/#validator-customconstraints"
  * 
  */
-public class NoTagValidator implements ConstraintValidator<NoTag, String> {
+public class NoTagValidator extends BaseValidator implements ConstraintValidator<NoTag, String> {
 
 	/** Class logger */
 	private static final Logger LOGGER = LoggerFactory.getLogger(NoTagValidator.class);
@@ -46,7 +45,7 @@ public class NoTagValidator implements ConstraintValidator<NoTag, String> {
 			// Apply check only if value is not empty....
 			if (!StringUtils.isEmpty(value)) {
 				// Step 1 : Decode value using default charset
-				String decodedValue = URLDecoder.decode(value, Charset.defaultCharset().name());
+				String decodedValue = decode(value, Charset.defaultCharset().name());
 				// Step 2 : Check tag presence
 				isValidFlg = (decodedValue.indexOf("/>") == -1);
 			}

@@ -24,7 +24,7 @@ import com.github.righettod.hvsc.annotation.CheckContent;
  * @see "http://docs.jboss.org/hibernate/stable/validator/reference/en-US/html_single/#validator-customconstraints"
  * 
  */
-public class CheckContentValidator implements ConstraintValidator<CheckContent, String> {
+public class CheckContentValidator extends BaseValidator implements ConstraintValidator<CheckContent, String> {
 
 	/** Class logger */
 	private static final Logger LOGGER = LoggerFactory.getLogger(CheckContentValidator.class);

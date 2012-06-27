@@ -1,6 +1,5 @@
 package com.github.righettod.hvsc.annotation.validator;
 
-import java.net.URLDecoder;
 import java.nio.charset.Charset;
 import java.util.ArrayList;
 import java.util.List;
@@ -24,7 +23,7 @@ import com.github.righettod.hvsc.annotation.NoPathTraversal;
  * @see "https://www.owasp.org/index.php/Category:Path_Traversal_Attack"
  * 
  */
-public class NoPathTraversalValidator implements ConstraintValidator<NoPathTraversal, String> {
+public class NoPathTraversalValidator extends BaseValidator implements ConstraintValidator<NoPathTraversal, String> {
 
 	/** Class logger */
 	private static final Logger LOGGER = LoggerFactory.getLogger(NoPathTraversalValidator.class);
@@ -61,7 +60,7 @@ public class NoPathTraversalValidator implements ConstraintValidator<NoPathTrave
 			// Apply check only if value is not empty....
 			if (!StringUtils.isEmpty(value)) {
 				// Step 1 : Decode value using default charset
-				String decodedValueLC = URLDecoder.decode(value, Charset.defaultCharset().name());
+				String decodedValueLC = decode(value, Charset.defaultCharset().name());
 				// Step 2 : Check for patterns presence
 				for (String pattern : PATTERNS) {
 					if (decodedValueLC.indexOf(pattern) != -1) {

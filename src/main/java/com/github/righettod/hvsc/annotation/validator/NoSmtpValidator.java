@@ -1,6 +1,5 @@
 package com.github.righettod.hvsc.annotation.validator;
 
-import java.net.URLDecoder;
 import java.nio.charset.Charset;
 import java.util.ArrayList;
 import java.util.List;
@@ -22,7 +21,7 @@ import com.github.righettod.hvsc.annotation.NoSmtp;
  * @see "http://forum.unifiedemail.net/default.aspx?g=posts&t=68"
  * 
  */
-public class NoSmtpValidator implements ConstraintValidator<NoSmtp, String> {
+public class NoSmtpValidator extends BaseValidator implements ConstraintValidator<NoSmtp, String> {
 
 	/** Class logger */
 	private static final Logger LOGGER = LoggerFactory.getLogger(NoSmtpValidator.class);
@@ -74,7 +73,7 @@ public class NoSmtpValidator implements ConstraintValidator<NoSmtp, String> {
 			// Apply check only if value is not empty....
 			if (!StringUtils.isEmpty(value)) {
 				// Step 1 : Decode value using default charset
-				String decodedValueLC = URLDecoder.decode(value, Charset.defaultCharset().name()).toLowerCase();
+				String decodedValueLC = decode(value, Charset.defaultCharset().name()).toLowerCase();
 				// Step 2 : Check for SMTP standard headers presence
 				for (String header : SMTP_STANDARD_HEADERS) {
 					if (decodedValueLC.indexOf(header.toLowerCase()) != -1) {

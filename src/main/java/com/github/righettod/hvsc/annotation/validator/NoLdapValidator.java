@@ -1,6 +1,5 @@
 package com.github.righettod.hvsc.annotation.validator;
 
-import java.net.URLDecoder;
 import java.nio.charset.Charset;
 
 import javax.validation.ConstraintValidator;
@@ -20,7 +19,7 @@ import com.github.righettod.hvsc.annotation.NoLdap;
  * @see "https://www.owasp.org/index.php/LDAP_injection"
  * 
  */
-public class NoLdapValidator implements ConstraintValidator<NoLdap, String> {
+public class NoLdapValidator extends BaseValidator implements ConstraintValidator<NoLdap, String> {
 
 	/** Class logger */
 	private static final Logger LOGGER = LoggerFactory.getLogger(NoLdapValidator.class);
@@ -50,7 +49,7 @@ public class NoLdapValidator implements ConstraintValidator<NoLdap, String> {
 			// Apply check only if value is not empty....
 			if (!StringUtils.isEmpty(value)) {
 				// Step 1 : Decode value using default charset
-				String decodedValue = URLDecoder.decode(value, Charset.defaultCharset().name());
+				String decodedValue = decode(value, Charset.defaultCharset().name());
 				// Step 2 : Check character list
 				for (char c : decodedValue.toCharArray()) {
 					if (LDAP_FILTER_SPECIAL_CHARACTER_SET.indexOf(c) != -1) {
