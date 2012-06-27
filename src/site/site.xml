@@ -23,6 +23,7 @@
 			<item name="Annotation : NoSmtp" href="annotation-NoSmtp.html" />
 			<item name="Annotation : NoPathTraversal" href="annotation-NoPathTraversal.html" />
 			<item name="Annotation : NoOSCommandsChaining" href="annotation-NoOSCommandsChaining.html" />
+			<item name="Configuration : Charset checking" href="config-EnableCharsetChecking.html" />
 			<item name="Validation" href="validation.html" />
 			<item name="Integration" href="validation-integration.html" />
 		</menu>

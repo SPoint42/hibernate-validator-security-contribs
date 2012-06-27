@@ -21,7 +21,7 @@ import com.github.righettod.hvsc.test.vo.SimpleBean;
  * 
  */
 @SuppressWarnings("static-method")
-public class NoLdapValidatorTest {
+public class NoLdapValidatorTest extends BaseTest {
 
 	/** JSR303 validator */
 	private static final Validator VALIDATOR = Validation.buildDefaultValidatorFactory().getValidator();

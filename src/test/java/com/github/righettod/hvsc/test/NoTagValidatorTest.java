@@ -22,7 +22,7 @@ import com.github.righettod.hvsc.test.vo.SimpleBean;
  * 
  */
 @SuppressWarnings("static-method")
-public class NoTagValidatorTest {
+public class NoTagValidatorTest extends BaseTest {
 
 	/** JSR303 validator */
 	private static final Validator VALIDATOR = Validation.buildDefaultValidatorFactory().getValidator();

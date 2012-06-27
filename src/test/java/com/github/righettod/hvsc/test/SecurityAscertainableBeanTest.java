@@ -19,7 +19,7 @@ import com.github.righettod.hvsc.test.vo.SimpleBeanUsingInheritance;
  * 
  */
 @SuppressWarnings("static-method")
-public class SecurityAscertainableBeanTest {
+public class SecurityAscertainableBeanTest extends BaseTest {
 
 	/**
 	 * Test case for valid case

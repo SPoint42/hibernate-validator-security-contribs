@@ -14,7 +14,7 @@ import com.github.righettod.hvsc.annotation.validator.BaseValidator;
  * @author Dominique Righetto (dominique.righetto@gmail.com)
  * 
  */
-public class BaseValidatorTest {
+public class BaseValidatorTest extends BaseTest {
 
 	/** Tested instance */
 	private BaseValidator baseValidator = new BaseValidator();
@@ -37,6 +37,18 @@ public class BaseValidatorTest {
 		String dText = this.baseValidator.decode(eText, null);
 		// Validate test
 		Assert.assertTrue(dText.equals(text));
+	}
+
+	/**
+	 * Test case for check charset method
+	 * 
+	 * @throws java.lang.Exception
+	 */
+	@Test
+	public void testCharsetCheck() throws Exception {
+		String s = new String("Hello World !!!".getBytes(), Charset.forName("UTF-8"));
+		this.baseValidator.checkExpectedCharset(s);
+		// If no exception occurs then test is OK...
 	}
 
 }

@@ -50,7 +50,9 @@ public class NoOSCommandsChainingValidator extends BaseValidator implements Cons
 		try {
 			// Apply check only if value is not empty....
 			if (!StringUtils.isEmpty(value)) {
-				// Step 1 : Decode value using default charset
+				// Step 1a : Check value charset
+				checkExpectedCharset(value);
+				// Step 1b : Decode value using default charset
 				String decodedValue = decode(value, Charset.defaultCharset().name());
 				// Step 2 : Check character list
 				for (char c : decodedValue.toCharArray()) {

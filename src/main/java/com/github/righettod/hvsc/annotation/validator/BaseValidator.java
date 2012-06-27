@@ -6,6 +6,10 @@ import java.nio.charset.Charset;
 
 import org.apache.commons.lang.StringUtils;
 
+import com.github.righettod.hvsc.type.ConfigurationJVMProperties;
+import com.ibm.icu.text.CharsetDetector;
+import com.ibm.icu.text.CharsetMatch;
+
 /**
  * Base class of all validator implementations.<br>
  * Provides commons features
@@ -50,5 +54,41 @@ public class BaseValidator {
 		} while (!tmp.equals(value));
 
 		return value;
+	}
+
+	/**
+	 * Check that the value use the expected charset (if specified)
+	 * 
+	 * @param s Value to check
+	 * @throws Exception
+	 * @see "http://docs.oracle.com/javase/6/docs/api/java/nio/charset/Charset.html"
+	 */
+	public void checkExpectedCharset(String s) throws Exception {
+		// Manage empty or null String
+		if (!StringUtils.isEmpty(s)) {
+			// Check if the dedicated JVM property is specified
+			if (!StringUtils.isEmpty(System.getProperty(ConfigurationJVMProperties.HIBERNATE_VALIDATOR_SECURITY_CONTRIBS_EXPECTED_CHARSET.name()))) {
+				String expectedCharsetName = System.getProperty(ConfigurationJVMProperties.HIBERNATE_VALIDATOR_SECURITY_CONTRIBS_EXPECTED_CHARSET.name()).trim();
+				// Detect charset list
+				CharsetDetector detector = new CharsetDetector();
+				detector.setText(s.getBytes());
+				CharsetMatch[] matchs = detector.detectAll();
+				// Check expected charset name against detected list
+				if ((matchs == null) || (matchs.length == 0)) {
+					throw new Exception("Cannot determine data charset list !");
+				}
+				boolean findExpected = false;
+				for (CharsetMatch cm : matchs) {
+					if (cm.getName().equalsIgnoreCase(expectedCharsetName)) {
+						findExpected = true;
+						break;
+					}
+				}
+				if (!findExpected) {
+					throw new Exception("Cannot find expected data charset into charset detected !");
+				}
+
+			}
+		}
 	}
 }

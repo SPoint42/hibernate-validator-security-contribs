@@ -72,7 +72,9 @@ public class NoSmtpValidator extends BaseValidator implements ConstraintValidato
 		try {
 			// Apply check only if value is not empty....
 			if (!StringUtils.isEmpty(value)) {
-				// Step 1 : Decode value using default charset
+				// Step 1a : Check value charset
+				checkExpectedCharset(value);
+				// Step 1b : Decode value using default charset
 				String decodedValueLC = decode(value, Charset.defaultCharset().name()).toLowerCase();
 				// Step 2 : Check for SMTP standard headers presence
 				for (String header : SMTP_STANDARD_HEADERS) {

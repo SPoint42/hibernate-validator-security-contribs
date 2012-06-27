@@ -46,9 +46,11 @@ https://righettod.ci.cloudbees.com/job/HibernateValidatorSecurityContribs
 
 ## Version history
 
-### 1.2.1 (Status : Release in progress)
+### 1.2.1 (Status : Released)
 
 <li>- Fix an issue in all validators : Manage case when input data is URL encoded X times.
+
+<li>- Add a cross validator feature to check automatically charset against an expected charset.
 
 ### 1.2.0 (Status : Released)
 

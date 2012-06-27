@@ -25,6 +25,7 @@
 			<property name="allowThrowsTagsForSubclasses" value="true"/>
 			<property name="logLoadErrors" value="true"/>
 			<property name="suppressLoadErrors"  value="true"/>
+			<property name="allowMissingThrowsTags" value="true"/>
 		</module>		
 		<module name="JavadocType"/>
 		<module name="JavadocVariable"/>

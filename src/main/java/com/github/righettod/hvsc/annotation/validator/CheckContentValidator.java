@@ -126,6 +126,9 @@ public class CheckContentValidator extends BaseValidator implements ConstraintVa
 		try {
 			// Apply check only is value is not empty....
 			if (!StringUtils.isEmpty(value)) {
+				// Step 1 : Check value charset
+				checkExpectedCharset(value);
+				// Step 2 : Apply check
 				for (int i = 0; i < value.length(); i++) {
 					current = value.charAt(i);
 					// Check current character against whitelist

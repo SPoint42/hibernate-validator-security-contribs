@@ -1,0 +1,22 @@
+           ------
+           Charset checking
+           ------
+	
+How to enable automatic charset checking against an expected charset. 
+	
+	To enable automatic charset checking against an expected charset you must define a JVM property named "<<HIBERNATE_VALIDATOR_SECURITY_CONTRIBS_EXPECTED_CHARSET>>" with a value setted to the charset named expected (case is not sensitive):
+	
+	Example:
+	
++--------------------------------------------------------------------------+		
+HIBERNATE_VALIDATOR_SECURITY_CONTRIBS_EXPECTED_CHARSET=UTF-8
+
+HIBERNATE_VALIDATOR_SECURITY_CONTRIBS_EXPECTED_CHARSET=UTF-16LE
+
+HIBERNATE_VALIDATOR_SECURITY_CONTRIBS_EXPECTED_CHARSET=ISO-8859-1
++--------------------------------------------------------------------------+		
+		
+	[]
+	
+	See {{{http://docs.oracle.com/javase/6/docs/api/java/nio/charset/Charset.html}here}} for a complete charset name list.
+			
