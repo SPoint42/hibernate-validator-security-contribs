@@ -6,6 +6,7 @@ import com.github.righettod.hvsc.annotation.NoOSCommandsChaining;
 import com.github.righettod.hvsc.annotation.NoPathTraversal;
 import com.github.righettod.hvsc.annotation.NoSmtp;
 import com.github.righettod.hvsc.annotation.NoTag;
+import com.github.righettod.hvsc.annotation.NoXPath;
 import com.github.righettod.hvsc.annotation.OnlyPrintableCharacter;
 
 /**
@@ -72,6 +73,10 @@ public class SimpleBean {
 	@NoOSCommandsChaining
 	private String data14 = null;
 
+	/** noXPath */
+	@NoXPath
+	private String data15 = null;
+
 	/**
 	 * Getter
 	 * 
@@ -84,8 +89,7 @@ public class SimpleBean {
 	/**
 	 * Setter : only-number with locale specified (bundle for this locale do not exists)
 	 * 
-	 * @param data6
-	 *        the data6 to set
+	 * @param data6 the data6 to set
 	 */
 	public void setData6(String data6) {
 		this.data6 = data6;
@@ -103,8 +107,7 @@ public class SimpleBean {
 	/**
 	 * Setter : only-number with locale specified (bundle for this locale exists)
 	 * 
-	 * @param data5
-	 *        the data5 to set
+	 * @param data5 the data5 to set
 	 */
 	public void setData5(String data5) {
 		this.data5 = data5;
@@ -122,8 +125,7 @@ public class SimpleBean {
 	/**
 	 * Setter : only-alpha
 	 * 
-	 * @param data1
-	 *        the data1 to set
+	 * @param data1 the data1 to set
 	 */
 	public void setData1(String data1) {
 		this.data1 = data1;
@@ -141,8 +143,7 @@ public class SimpleBean {
 	/**
 	 * Setter : no-special-character
 	 * 
-	 * @param data2
-	 *        the data2 to set
+	 * @param data2 the data2 to set
 	 */
 	public void setData2(String data2) {
 		this.data2 = data2;
@@ -160,8 +161,7 @@ public class SimpleBean {
 	/**
 	 * Setter : check on character repetition only
 	 * 
-	 * @param data3
-	 *        the data3 to set
+	 * @param data3 the data3 to set
 	 */
 	public void setData3(String data3) {
 		this.data3 = data3;
@@ -179,8 +179,7 @@ public class SimpleBean {
 	/**
 	 * Setter : with-special-character + check on character repetition only
 	 * 
-	 * @param data4
-	 *        the data4 to set
+	 * @param data4 the data4 to set
 	 */
 	public void setData4(String data4) {
 		this.data4 = data4;
@@ -198,8 +197,7 @@ public class SimpleBean {
 	/**
 	 * Setter : No Tag
 	 * 
-	 * @param data7
-	 *        the data7 to set
+	 * @param data7 the data7 to set
 	 */
 	public void setData7(String data7) {
 		this.data7 = data7;
@@ -217,8 +215,7 @@ public class SimpleBean {
 	/**
 	 * Setter : Only Printable Character
 	 * 
-	 * @param data8
-	 *        the data8 to set
+	 * @param data8 the data8 to set
 	 */
 	public void setData8(String data8) {
 		this.data8 = data8;
@@ -236,8 +233,7 @@ public class SimpleBean {
 	/**
 	 * Setter : Only Printable Character
 	 * 
-	 * @param data9
-	 *        the data9 to set
+	 * @param data9 the data9 to set
 	 */
 	public void setData9(String data9) {
 		this.data9 = data9;
@@ -255,8 +251,7 @@ public class SimpleBean {
 	/**
 	 * Setter : No Ldap
 	 * 
-	 * @param data10
-	 *        the data10 to set
+	 * @param data10 the data10 to set
 	 */
 	public void setData10(String data10) {
 		this.data10 = data10;
@@ -274,8 +269,7 @@ public class SimpleBean {
 	/**
 	 * Setter : No SMTP
 	 * 
-	 * @param data11
-	 *        the data11 to set
+	 * @param data11 the data11 to set
 	 */
 	public void setData11(String data11) {
 		this.data11 = data11;
@@ -293,8 +287,7 @@ public class SimpleBean {
 	/**
 	 * Setter = No SMTP without non standard headers check
 	 * 
-	 * @param data12
-	 *        the data12 to set
+	 * @param data12 the data12 to set
 	 */
 	public void setData12(String data12) {
 		this.data12 = data12;
@@ -312,8 +305,7 @@ public class SimpleBean {
 	/**
 	 * Setter = No Path Traversal
 	 * 
-	 * @param data13
-	 *        the data13 to set
+	 * @param data13 the data13 to set
 	 */
 	public void setData13(String data13) {
 		this.data13 = data13;
@@ -331,11 +323,28 @@ public class SimpleBean {
 	/**
 	 * Setter = No OS Command Chaining
 	 * 
-	 * @param data14
-	 *        the data14 to set
+	 * @param data14 the data14 to set
 	 */
 	public void setData14(String data14) {
 		this.data14 = data14;
+	}
+
+	/**
+	 * Getter
+	 * 
+	 * @return the data15
+	 */
+	public String getData15() {
+		return this.data15;
+	}
+
+	/**
+	 * Setter = No XPath
+	 * 
+	 * @param data15 the data15 to set
+	 */
+	public void setData15(String data15) {
+		this.data15 = data15;
 	}
 
 }

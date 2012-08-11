@@ -1,0 +1,10 @@
+           ------
+           Annotation NoXPath
+           ------
+             	                                        
+How to use annotation 'NoXPath'.
+
+	The annotation is named "@NoXPath" and validate that a string do not contains any character that can be interpreted in a XPATH filter expression.
+
+	It have no specific attributes.
+	

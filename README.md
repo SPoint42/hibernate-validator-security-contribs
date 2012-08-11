@@ -46,6 +46,10 @@ https://righettod.ci.cloudbees.com/job/HibernateValidatorSecurityContribs
 
 ## Version history
 
+### 1.3.0-SNAPSHOT (Status : Currently under development)
+
+<li>- Add an annotation to check XPATH injection.
+
 ### 1.2.1 (Status : Released)
 
 <li>- Fix an issue in all validators : Manage case when input data is URL encoded X times.
