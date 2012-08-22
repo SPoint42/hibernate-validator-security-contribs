@@ -232,8 +232,8 @@
 	</scm>
 	<url>https://github.com/righettod/hibernate-validator-security-contribs</url>
 	<organization>
-		<name>Logica (Luxemburg Office)</name>
-		<url>http://www.facebook.com/logicalux</url>
+		<name>CGI (Luxemburg Office)</name>
+		<url>http://www.cgi.com</url>
 	</organization>
 	<distributionManagement>
 		<repository>
