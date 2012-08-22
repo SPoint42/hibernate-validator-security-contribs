@@ -11,7 +11,9 @@ reason that i decided to use it as framework.
 This project is implemented using Maven (v3.x) structure.
 
 ![Built on CloudBees](http://web-static-cloudfront.s3.amazonaws.com/images/badges/BuiltOnDEV.png) 
+
 ![Hosted on GitHub](http://alx.github.com/gitbook/assets/images/github.png) 
+
 ![Powered by CGI](http://www.cgi.com/sites/cgi.com/themes/cgi/logo.png)
 
 ## Project distribution & informations
