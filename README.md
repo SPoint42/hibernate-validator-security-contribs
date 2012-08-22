@@ -46,6 +46,8 @@ Project is built at each commit using Jenkins on CloudBees on:
 
 https://righettod.ci.cloudbees.com/job/HibernateValidatorSecurityContribs
 
+[![Build Status](https://righettod.ci.cloudbees.com/job/HibernateValidatorSecurityContribs/badge/icon)](https://righettod.ci.cloudbees.com/job/HibernateValidatorSecurityContribs/)
+
 ## Version history
 
 ### 1.3.0-SNAPSHOT (Status : Currently under development)
