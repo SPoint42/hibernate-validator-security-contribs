@@ -10,7 +10,7 @@ reason that i decided to use it as framework.
 
 This project is implemented using Maven (v3.x) structure.
 
-![Built on CloudBees](http://web-static-cloudfront.s3.amazonaws.com/images/badges/BuiltOnDEV.png) 
+![Built on CloudBees](http://www.cloudbees.com/sites/default/files/Button-Built-on-CB-1.png) 
 
 ![Hosted on GitHub](http://alx.github.com/gitbook/assets/images/github.png) 
 
