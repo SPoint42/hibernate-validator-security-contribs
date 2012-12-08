@@ -87,11 +87,3 @@ https://righettod.ci.cloudbees.com/job/HibernateValidatorSecurityContribs
 ### 1.0.0 (Status : Released)
 
 <li>- First official release.
-
-- - -
-
-Feel free to create a ticket for issues/remarks/features ;o)
-
-Kind regards,
-
-Dominique Righetto
