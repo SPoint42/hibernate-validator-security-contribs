@@ -52,6 +52,8 @@ https://righettod.ci.cloudbees.com/job/HibernateValidatorSecurityContribs
 
 ### 1.3.0-SNAPSHOT (Status : Currently under development)
 
+<li>- Add an annotation to check binary file upload mime type (a annotation to check text file will be provided soon).
+
 <li>- Add an annotation to check XPATH injection.
 
 ### 1.2.1 (Status : Released)

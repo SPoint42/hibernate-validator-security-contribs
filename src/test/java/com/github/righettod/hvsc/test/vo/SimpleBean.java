@@ -1,5 +1,6 @@
 package com.github.righettod.hvsc.test.vo;
 
+import com.github.righettod.hvsc.annotation.CheckBinaryUpload;
 import com.github.righettod.hvsc.annotation.CheckContent;
 import com.github.righettod.hvsc.annotation.NoLdap;
 import com.github.righettod.hvsc.annotation.NoOSCommandsChaining;
@@ -76,6 +77,10 @@ public class SimpleBean {
 	/** noXPath */
 	@NoXPath
 	private String data15 = null;
+
+	/** checkBinaryUpload */
+	@CheckBinaryUpload(allowedMimeTypes = { "Application/MSWord", "Image/pNg", "" })
+	private String data16 = null;
 
 	/**
 	 * Getter
@@ -345,6 +350,24 @@ public class SimpleBean {
 	 */
 	public void setData15(String data15) {
 		this.data15 = data15;
+	}
+
+	/**
+	 * Getter
+	 * 
+	 * @return the data16
+	 */
+	public String getData16() {
+		return this.data16;
+	}
+
+	/**
+	 * Setter = CheckBinaryUpload
+	 * 
+	 * @param data16 the data16 to set
+	 */
+	public void setData16(String data16) {
+		this.data16 = data16;
 	}
 
 }

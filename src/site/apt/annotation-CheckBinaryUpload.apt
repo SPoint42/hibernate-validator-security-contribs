@@ -1,0 +1,29 @@
+           ------
+           Annotation CheckBinaryUpload
+           ------
+             	                                        
+How to use annotation 'CheckBinaryUpload'.
+
+	The annotation is named "@CheckBinaryUpload" and ensure that an uploaded file have an allowed mime type.
+				
+	It have the following specific attribute:
+	
+	* allowedMimeTypes.
+	
+	[]
+		
+	"<<allowedMimeTypes>>" attribute is used to specify the list of allowed mime types (case insensitive). 
+	
+	Ex: "application/msword", "image/png", "application/pdf"
+
+	
+[./images/info.png] 
+
+	Annotation must be placed on a string type member representing the path to the temporary file uploaded before business processing be applied.	 
+	
+[./images/warn.png] 
+
+	Use this annotation for binary file only (doc,zip,pdf,...), a annotation for plain text file will be provided soon because it requires additional security check.
+	
+
+	
