@@ -1,0 +1,7 @@
+analyseLocally=false
+eclipse.preferences.version=1
+projectArtifactId=hibernate-validator-security-contribs
+projectBranch=
+projectGroupId=com.github.righettod
+serverUrl=http\://localhost\:6546/sonar
+version=1

@@ -3,6 +3,7 @@ package com.github.righettod.hvsc.annotation.validator;
 import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Locale;
 
 import javax.validation.ConstraintValidator;
 import javax.validation.ConstraintValidatorContext;
@@ -40,7 +41,7 @@ public class CheckBinaryUploadValidator extends BaseValidator implements Constra
 			// Fill mime type list and change case to lower case to become case insensitive....
 			for (String mType : constraintAnnotation.allowedMimeTypes()) {
 				if (!StringUtils.isEmpty(mType)) {
-					this.allowedMimeTypes.add(mType.trim().toLowerCase());
+					this.allowedMimeTypes.add(mType.trim().toLowerCase(Locale.getDefault()));
 				}
 			}
 
@@ -78,7 +79,7 @@ public class CheckBinaryUploadValidator extends BaseValidator implements Constra
 				String mType = MimeUtil2.getMostSpecificMimeType(mimeUtil.getMimeTypes(f)).toString();
 
 				// Check Mime type against allowed mime types list
-				isValidFlg = this.allowedMimeTypes.contains(StringUtils.defaultString(mType).trim().toLowerCase());
+				isValidFlg = this.allowedMimeTypes.contains(StringUtils.defaultString(mType).trim().toLowerCase(Locale.getDefault()));
 			}
 		}
 		catch (Exception e) {

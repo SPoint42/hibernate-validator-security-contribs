@@ -3,6 +3,7 @@ package com.github.righettod.hvsc.annotation.validator;
 import java.nio.charset.Charset;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Locale;
 
 import javax.validation.ConstraintValidator;
 import javax.validation.ConstraintValidatorContext;
@@ -75,10 +76,10 @@ public class NoSmtpValidator extends BaseValidator implements ConstraintValidato
 				// Step 1a : Check value charset
 				checkExpectedCharset(value);
 				// Step 1b : Decode value using default charset
-				String decodedValueLC = decode(value, Charset.defaultCharset().name()).toLowerCase();
+				String decodedValueLC = decode(value, Charset.defaultCharset().name()).toLowerCase(Locale.getDefault());
 				// Step 2 : Check for SMTP standard headers presence
 				for (String header : SMTP_STANDARD_HEADERS) {
-					if (decodedValueLC.indexOf(header.toLowerCase()) != -1) {
+					if (decodedValueLC.indexOf(header.toLowerCase(Locale.getDefault())) != -1) {
 						isValidFlg = false;
 						break;
 					}
@@ -90,7 +91,8 @@ public class NoSmtpValidator extends BaseValidator implements ConstraintValidato
 				}
 
 			}
-		} catch (Exception e) {
+		}
+		catch (Exception e) {
 			LOGGER.error("Error during data validation !", e);
 			isValidFlg = false;
 		}

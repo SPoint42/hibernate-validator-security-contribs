@@ -51,7 +51,8 @@ public class BaseValidator {
 		do {
 			tmp = value;
 			value = URLDecoder.decode(value, charset);
-		} while (!tmp.equals(value));
+		}
+		while (!tmp.equals(value));
 
 		return value;
 	}
@@ -64,30 +65,26 @@ public class BaseValidator {
 	 * @see "http://docs.oracle.com/javase/6/docs/api/java/nio/charset/Charset.html"
 	 */
 	public void checkExpectedCharset(String s) throws Exception {
-		// Manage empty or null String
-		if (!StringUtils.isEmpty(s)) {
-			// Check if the dedicated JVM property is specified
-			if (!StringUtils.isEmpty(System.getProperty(ConfigurationJVMProperties.HIBERNATE_VALIDATOR_SECURITY_CONTRIBS_EXPECTED_CHARSET.name()))) {
-				String expectedCharsetName = System.getProperty(ConfigurationJVMProperties.HIBERNATE_VALIDATOR_SECURITY_CONTRIBS_EXPECTED_CHARSET.name()).trim();
-				// Detect charset list
-				CharsetDetector detector = new CharsetDetector();
-				detector.setText(s.getBytes());
-				CharsetMatch[] matchs = detector.detectAll();
-				// Check expected charset name against detected list
-				if ((matchs == null) || (matchs.length == 0)) {
-					throw new Exception("Cannot determine data charset list !");
+		// Manage empty or null String and Check if the dedicated JVM property is specified
+		if (!StringUtils.isEmpty(s) && !StringUtils.isEmpty(System.getProperty(ConfigurationJVMProperties.HIBERNATE_VALIDATOR_SECURITY_CONTRIBS_EXPECTED_CHARSET.name()))) {
+			String expectedCharsetName = System.getProperty(ConfigurationJVMProperties.HIBERNATE_VALIDATOR_SECURITY_CONTRIBS_EXPECTED_CHARSET.name()).trim();
+			// Detect charset list
+			CharsetDetector detector = new CharsetDetector();
+			detector.setText(s.getBytes());
+			CharsetMatch[] matchs = detector.detectAll();
+			// Check expected charset name against detected list
+			if ((matchs == null) || (matchs.length == 0)) {
+				throw new Exception("Cannot determine data charset list !");
+			}
+			boolean findExpected = false;
+			for (CharsetMatch cm : matchs) {
+				if (cm.getName().equalsIgnoreCase(expectedCharsetName)) {
+					findExpected = true;
+					break;
 				}
-				boolean findExpected = false;
-				for (CharsetMatch cm : matchs) {
-					if (cm.getName().equalsIgnoreCase(expectedCharsetName)) {
-						findExpected = true;
-						break;
-					}
-				}
-				if (!findExpected) {
-					throw new Exception("Cannot find expected data charset into charset detected !");
-				}
-
+			}
+			if (!findExpected) {
+				throw new Exception("Cannot find expected data charset into charset detected !");
 			}
 		}
 	}
