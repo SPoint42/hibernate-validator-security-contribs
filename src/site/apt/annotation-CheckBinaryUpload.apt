@@ -23,7 +23,7 @@ How to use annotation 'CheckBinaryUpload'.
 	
 [./images/warn.png] 
 
-	Use this annotation for binary file only (doc,zip,pdf,...), a annotation for plain text file will be provided soon because it requires additional security check.
+	Use this annotation for <<binary file>> only (doc,zip,pdf,...) !
 	
 
 	

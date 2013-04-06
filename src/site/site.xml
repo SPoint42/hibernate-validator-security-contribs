@@ -18,6 +18,7 @@
 		<menu name="Documentation">
 			<item name="Annotation : CheckContent" href="annotation-CheckContent.html" />
 			<item name="Annotation : CheckBinaryUpload" href="annotation-CheckBinaryUpload.html" />
+			<item name="Annotation : CheckTextUpload" href="annotation-CheckTextUpload.html" />
 			<item name="Annotation : NoTag" href="annotation-NoTag.html" />
 			<item name="Annotation : OnlyPrintableCharacter" href="annotation-OnlyPrintableCharacter.html" />
 			<item name="Annotation : NoLdap" href="annotation-NoLdap.html" />

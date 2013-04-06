@@ -27,7 +27,7 @@ public class BaseValidatorTest extends BaseTest {
 	@Test
 	public void testDecoding() throws Exception {
 		int x = 1000;
-		String text = "Hello World ? = L'éssentiel | @ [] ; - # _ . * () {} 100 OK";
+		String text = "Hello World ? = L'éssentiel % | @ [] ; - # _ . * () {} 100 OK";
 		// Encode text X times
 		String eText = text.toString();
 		for (int i = 1; i <= x; i++) {

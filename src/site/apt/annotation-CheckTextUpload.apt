@@ -1,0 +1,43 @@
+           ------
+           Annotation CheckTextUpload
+           ------
+             	                                        
+How to use annotation 'CheckTextUpload'.
+
+	The annotation is named "@CheckTextUpload" and ensure that an uploaded TEXT (not BINARY) file is not a server side script.
+				
+	It have the following specific attribute:
+	
+	* serverSideTechnologiesChecked.
+	
+	[]
+		
+	"<<serverSideTechnologiesChecked>>" attribute is used to specify the list of server side technologies to check (default is all technologies known by the annotation).
+	
+	 List of available values (case insensitive) :
+	 
+	 * php
+	 
+	 * asp
+	 
+	 * aspnet
+	 
+	 * jsp
+	 
+	 * ruby
+	 
+	 * coldfusion
+	
+	Ex: "php", "asp", "ruby"
+
+	
+[./images/info.png] 
+
+	Annotation must be placed on a string type member representing the path to the temporary file uploaded before business processing be applied.	 
+	
+[./images/warn.png] 
+
+	Use this annotation for <<text file>> only !
+	
+
+	

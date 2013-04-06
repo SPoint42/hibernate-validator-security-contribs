@@ -22,9 +22,10 @@
 		</buildCommand>
 	</buildSpec>
 	<natures>
+		<nature>net.sf.eclipsecs.core.CheckstyleNature</nature>
+		<nature>com.cloudbees.eclipse.core.cloudbeesNature</nature>
+		<nature>org.eclipse.m2e.core.maven2Nature</nature>
 		<nature>org.sonar.ide.eclipse.core.sonarNature</nature>
 		<nature>org.eclipse.jdt.core.javanature</nature>
-		<nature>org.eclipse.m2e.core.maven2Nature</nature>
-		<nature>net.sf.eclipsecs.core.CheckstyleNature</nature>
 	</natures>
 </projectDescription>

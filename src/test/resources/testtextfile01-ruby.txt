@@ -1,0 +1,3 @@
+My sample file is try to exec an command line 
+<% system("ruby test.rb") %>
+It's cool no...

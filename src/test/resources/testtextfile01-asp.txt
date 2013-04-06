@@ -1,0 +1,8 @@
+My sample file is try to exec an command line 
+<%
+Dim oShell
+Set oShell = Server.CreateObject("Wscript.Shell")
+oShell.Run dir c:\
+Set oShell = Nothing
+%>
+It's cool no...

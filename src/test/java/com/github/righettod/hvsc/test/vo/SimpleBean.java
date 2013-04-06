@@ -2,6 +2,7 @@ package com.github.righettod.hvsc.test.vo;
 
 import com.github.righettod.hvsc.annotation.CheckBinaryUpload;
 import com.github.righettod.hvsc.annotation.CheckContent;
+import com.github.righettod.hvsc.annotation.CheckTextUpload;
 import com.github.righettod.hvsc.annotation.NoLdap;
 import com.github.righettod.hvsc.annotation.NoOSCommandsChaining;
 import com.github.righettod.hvsc.annotation.NoPathTraversal;
@@ -81,6 +82,27 @@ public class SimpleBean {
 	/** checkBinaryUpload */
 	@CheckBinaryUpload(allowedMimeTypes = { "Application/MSWord", "Image/pNg", "" })
 	private String data16 = null;
+
+	@CheckTextUpload
+	private String data17 = null;
+
+	@CheckTextUpload(serverSideTechnologiesChecked = { "php" })
+	private String data18 = null;
+
+	@CheckTextUpload(serverSideTechnologiesChecked = { "asp" })
+	private String data19 = null;
+
+	@CheckTextUpload(serverSideTechnologiesChecked = { "aspnet" })
+	private String data20 = null;
+
+	@CheckTextUpload(serverSideTechnologiesChecked = { "jsp" })
+	private String data21 = null;
+
+	@CheckTextUpload(serverSideTechnologiesChecked = { "ruby" })
+	private String data22 = null;
+
+	@CheckTextUpload(serverSideTechnologiesChecked = { "coldfusion" })
+	private String data23 = null;
 
 	/**
 	 * Getter
@@ -368,6 +390,132 @@ public class SimpleBean {
 	 */
 	public void setData16(String data16) {
 		this.data16 = data16;
+	}
+
+	/**
+	 * Setter = CheckTextUpload for PHP SS tech
+	 * 
+	 * @param data18 the data18 to set
+	 */
+	public void setData18(String data18) {
+		this.data18 = data18;
+	}
+
+	/**
+	 * Setter = CheckTextUpload for ASP SS tech
+	 * 
+	 * @param data19 the data19 to set
+	 */
+	public void setData19(String data19) {
+		this.data19 = data19;
+	}
+
+	/**
+	 * Setter = CheckTextUpload for ASP.NET SS tech
+	 * 
+	 * @param data20 the data20 to set
+	 */
+	public void setData20(String data20) {
+		this.data20 = data20;
+	}
+
+	/**
+	 * Setter = CheckTextUpload for JSP SS tech
+	 * 
+	 * @param data21 the data21 to set
+	 */
+	public void setData21(String data21) {
+		this.data21 = data21;
+	}
+
+	/**
+	 * Setter = CheckTextUpload for RUBY SS tech
+	 * 
+	 * @param data22 the data22 to set
+	 */
+	public void setData22(String data22) {
+		this.data22 = data22;
+	}
+
+	/**
+	 * Setter = CheckTextUpload for COLDFUSION SS tech
+	 * 
+	 * @param data23 the data23 to set
+	 */
+	public void setData23(String data23) {
+		this.data23 = data23;
+	}
+
+	/**
+	 * Getter
+	 * 
+	 * @return the data17
+	 */
+	public String getData17() {
+		return this.data17;
+	}
+
+	/**
+	 * Setter = CheckTextUpload for all SS tech
+	 * 
+	 * @param data17 the data17 to set
+	 */
+	public void setData17(String data17) {
+		this.data17 = data17;
+	}
+
+	/**
+	 * Getter
+	 * 
+	 * @return the data18
+	 */
+	public String getData18() {
+		return this.data18;
+	}
+
+	/**
+	 * Getter
+	 * 
+	 * @return the data19
+	 */
+	public String getData19() {
+		return this.data19;
+	}
+
+	/**
+	 * Getter
+	 * 
+	 * @return the data20
+	 */
+	public String getData20() {
+		return this.data20;
+	}
+
+	/**
+	 * Getter
+	 * 
+	 * @return the data21
+	 */
+	public String getData21() {
+		return this.data21;
+	}
+
+	/**
+	 * Getter
+	 * 
+	 * @return the data22
+	 */
+	public String getData22() {
+		return this.data22;
+	}
+
+	/**
+	 * Getter
+	 * 
+	 * @return the data23
+	 */
+	public String getData23() {
+		return this.data23;
 	}
 
 }

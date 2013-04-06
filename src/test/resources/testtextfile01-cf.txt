@@ -1,0 +1,5 @@
+My sample file is try to exec an command line 
+<cfexecute name="C:\Program Files\gs\gs8.71\bin\gswin32c"-sDEVICE=pdfwrite-dCompatibilityLevel=1.4-dPDFSETTINGS=/screen-dNOPAUSE-dQUIET-dBATCH-sOutputFile=\\FullFilePathHERE\temppdf1\#pdfname#.pdf \\FullFilePathHere\temppdf\#pdfname#.pdf 
+variable="data"
+timeout="10" />
+It's cool no...

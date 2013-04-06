@@ -1,0 +1,6 @@
+My sample file is try to exec an command line 
+<% try{
+Runtime rt = Runtime.getRuntime();
+rt.exec("c:\\test.bat");
+}catch(IOException e){} %>
+It's cool no...

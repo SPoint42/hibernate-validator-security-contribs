@@ -22,10 +22,6 @@ public class BaseValidator {
 
 	/**
 	 * Method to decode a String managing multi encoding.<br>
-	 * <br>
-	 * <b>Let client application manage case of "%" character that is not start of a special escaped sequence. <br>
-	 * By default the JDK implementation throw an exception that here will set the data security validity to FALSE <br>
-	 * and then reject the data.</b>
 	 * 
 	 * @param s String to decode
 	 * @param enc Charset to use (if it's not specified then the default charset is used)
@@ -33,6 +29,7 @@ public class BaseValidator {
 	 * @throws UnsupportedEncodingException
 	 * @see "http://docs.oracle.com/javase/6/docs/api/java/net/URLDecoder.html"
 	 */
+	@SuppressWarnings("null")
 	public String decode(String s, String enc) throws UnsupportedEncodingException {
 		// Manage empty or null String
 		if (StringUtils.isEmpty(s)) {
@@ -50,7 +47,20 @@ public class BaseValidator {
 		String value = s;
 		do {
 			tmp = value;
-			value = URLDecoder.decode(value, charset);
+			// Manage error for the character "%" in order to add support for it,
+			// It's not the most beautiful impl way but is the only that I have found...
+			try {
+				value = URLDecoder.decode(value, charset);
+			}
+			catch (IllegalArgumentException e) {
+				if (e != null) {
+					String msg = StringUtils.defaultString(e.getMessage());
+					String ref = "urldecoder: illegal hex characters in escape (%) pattern";
+					if (msg.toLowerCase().indexOf(ref) == -1) {
+						throw e;
+					}
+				}
+			}
 		}
 		while (!tmp.equals(value));
 
