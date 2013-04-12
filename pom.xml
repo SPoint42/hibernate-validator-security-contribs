@@ -8,10 +8,12 @@
 	<packaging>jar</packaging>
 	<description>This project aims at providing a set of content-checking constraint annotations, focused on security, using the JSR303 RI Hibernate Validation.</description>
 	<dependencies>
+		<!-- Use SLF4J version transitively provided by "mime-util" dependency. 
+			Using this we avoid the risk to have 2 differents versions into project dependencies. -->
 		<dependency>
 			<groupId>org.hibernate</groupId>
 			<artifactId>hibernate-validator</artifactId>
-			<version>5.0.0.Alpha1</version>
+			<version>5.0.0.Final</version>
 		</dependency>
 		<dependency>
 			<groupId>commons-lang</groupId>
@@ -22,21 +24,16 @@
 			<groupId>commons-io</groupId>
 			<artifactId>commons-io</artifactId>
 			<version>2.4</version>
-		</dependency>	         		
+		</dependency>
 		<dependency>
 			<groupId>org.codehaus.jackson</groupId>
 			<artifactId>jackson-mapper-asl</artifactId>
-			<version>1.9.9</version>
-		</dependency>
-		<dependency>
-			<groupId>org.slf4j</groupId>
-			<artifactId>slf4j-api</artifactId>
-			<version>1.5.6</version>
+			<version>1.9.12</version>
 		</dependency>
 		<dependency>
 			<groupId>com.ibm.icu</groupId>
 			<artifactId>icu4j</artifactId>
-			<version>49.1</version>
+			<version>51.1</version>
 		</dependency>
 		<dependency>
 			<groupId>eu.medsea.mimeutil</groupId>
@@ -86,6 +83,20 @@
 						</configuration>
 					</execution>
 				</executions>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-jar-plugin</artifactId>
+				<version>2.4</version>
+				<configuration>
+					<archive>
+						<index>true</index>
+						<manifest>
+							<addDefaultImplementationEntries>true</addDefaultImplementationEntries>
+							<addDefaultSpecificationEntries>true</addDefaultSpecificationEntries>
+						</manifest>
+					</archive>
+				</configuration>
 			</plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>

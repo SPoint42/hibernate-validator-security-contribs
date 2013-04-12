@@ -1,0 +1,63 @@
+           ------
+           Release notes
+           ------
+
+1.3.0-SNAPSHOT 
+
+	Status: <<Currently under development>>.
+
+	* Fix issue with the "%" character in decoding feature.
+
+	* Add an annotation to check text file upload for server side scripting content.
+
+	* Add an annotation to check binary file upload mime type.
+
+	* Add an annotation to check XPATH injection.
+	
+	[]
+
+1.2.1 
+
+	Status: <<Released>>.
+
+	* Fix an issue in all validators: Manage case when input data is URL encoded X times.
+
+	* Add a cross validator feature to check automatically charset against an expected charset.
+	
+	[]	
+
+1.2.0 
+
+	Status: <<Released>>.
+
+	* Fix an issue in LDAP validator : Miss special character.
+
+	* Fix an issue in all validators : If an exception is throwed during the validation then the validation pass.
+
+	* Add an annotation to check SMTP injection.
+
+	* Add an annotation to check Path Traversal injection.
+
+	* Add an annotation to check OS commands chaining.
+
+	* Add an base class to add bean validity check features by inheritance.
+
+	* Change validation checking rules of the NoTag annotation validator.
+	
+	[]	
+
+1.1.0 
+
+	Status: <<Released>>.
+
+	* Add new annotations + unit tests.
+
+	* Refactor documentation.
+	
+	[]	
+
+1.0.0 
+
+	Status: <<Released>>.
+
+	* First official release.			

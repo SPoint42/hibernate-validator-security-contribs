@@ -29,6 +29,7 @@
 			<item name="Configuration : Charset checking" href="config-EnableCharsetChecking.html" />
 			<item name="Validation" href="validation.html" />
 			<item name="Integration" href="validation-integration.html" />
+			<item name="Release notes" href="release-notes.html" />
 		</menu>
 		<menu ref="reports" />
 	</body>
