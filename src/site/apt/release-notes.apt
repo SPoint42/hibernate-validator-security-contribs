@@ -6,6 +6,10 @@
 
 	Status: <<Currently under development>>.
 
+	* Update all plugins versions.
+	
+	* Add "com.redhat.victims:enforce-victims-rule" Maven enforcer rule in order to check dependencies for security issues.	
+	
 	* Fix issue with the "%" character in decoding feature.
 
 	* Add an annotation to check text file upload for server side scripting content.
@@ -13,7 +17,7 @@
 	* Add an annotation to check binary file upload mime type.
 
 	* Add an annotation to check XPATH injection.
-	
+		
 	[]
 
 1.2.1 
