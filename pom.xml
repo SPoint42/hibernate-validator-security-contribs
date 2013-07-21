@@ -99,8 +99,8 @@
 						<configuration>
 							<rules>
 								<rule implementation="com.redhat.victims.VictimsRule">
-									<metadata>fatal</metadata>
-									<fingerprint>fatal</fingerprint>
+									<metadata>warning</metadata>
+									<fingerprint>warning</fingerprint>
 									<updates>auto</updates>
 								</rule>
 							</rules>
