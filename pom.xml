@@ -101,7 +101,8 @@
 								<rule implementation="com.redhat.victims.VictimsRule">
 									<metadata>warning</metadata>
 									<fingerprint>warning</fingerprint>
-									<updates>auto</updates>
+									<!-- Until server will go back to live -->
+									<updates>off</updates>
 								</rule>
 							</rules>
 						</configuration>
