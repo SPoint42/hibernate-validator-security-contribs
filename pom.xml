@@ -101,7 +101,7 @@
 								<rule implementation="com.redhat.victims.VictimsRule">
 									<metadata>fatal</metadata>
 									<fingerprint>fatal</fingerprint>
-									<updates>auto</updates>
+									<updates>off</updates>
 								</rule>
 							</rules>
 						</configuration>
