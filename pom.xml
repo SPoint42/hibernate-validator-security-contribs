@@ -101,7 +101,7 @@
 								<rule implementation="com.redhat.victims.VictimsRule">
 									<metadata>fatal</metadata>
 									<fingerprint>fatal</fingerprint>
-									<updates>off</updates>
+									<updates>auto</updates>
 									<jdbcUrl>jdbc:h2:file:/tmp/CVELocalCache</jdbcUrl>
 								</rule>
 							</rules>
