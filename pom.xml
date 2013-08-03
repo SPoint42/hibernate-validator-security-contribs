@@ -102,7 +102,7 @@
 									<metadata>fatal</metadata>
 									<fingerprint>fatal</fingerprint>
 									<updates>auto</updates>
-									<jdbcUrl>jdbc:h2:file:/tmp/CVELocalCache</jdbcUrl>
+									<jdbcUrl>jdbc:h2:file:/tmp/CVELocalCache;LOCK_TIMEOUT=10000</jdbcUrl>
 								</rule>
 							</rules>
 						</configuration>
