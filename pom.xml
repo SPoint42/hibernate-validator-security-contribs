@@ -103,6 +103,7 @@
 									<fingerprint>warning</fingerprint>
 									<!-- Until server will go back to live -->
 									<updates>off</updates>
+									<jdbcUrl>jdbc:h2:file:/tmp/CVELocalCache</jdbcUrl>
 								</rule>
 							</rules>
 						</configuration>
