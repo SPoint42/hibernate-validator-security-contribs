@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.github.righettod</groupId>
     <artifactId>hibernate-validator-security-contribs</artifactId>
-    <version>1.3.0</version>
+    <version>1.3.0-SNAPSHOT</version>
     <name>hibernate-validator-security-contribs</name>
     <packaging>jar</packaging>
     <description>This project aims at providing a set of content-checking constraint annotations, focused on security, using the JSR303 RI Hibernate Validation.</description>
@@ -192,9 +192,8 @@
     </properties>
     <licenses>
         <license>
-            <name>Apache 2</name>
-            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
-            <comments>A business-friendly OSS license</comments>
+            <name>GNU General Public License (GPL) v3</name>
+            <url>http://www.gnu.org/licenses/gpl.txt</url>
         </license>
     </licenses>
     <developers>
