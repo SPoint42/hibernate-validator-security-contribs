@@ -14,8 +14,6 @@ This project is implemented using Maven (v3.x) structure.
 
 ![Hosted on GitHub](http://alx.github.com/gitbook/assets/images/github.png) 
 
-![Powered by CGI](http://www.cgi.com/sites/cgi.com/themes/cgi/logo.png)
-
 ## Project distribution & informations
 
 Type command below to obtains project identity card:
