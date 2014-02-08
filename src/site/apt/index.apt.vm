@@ -6,11 +6,34 @@ Project objective.
 
 	This project aims at providing a set of content-checking constraint annotations, focused on security, using the JSR303 RI Hibernate Validation.
 	
-	This JSR can be used to perform security check on input user data and then it's for this reason that i decided to use
+	This JSR can be used to perform security check on input user data and then it's for this reason that I decided to use
 	it as framework.
 	
 	{{{http://docs.jboss.org/hibernate/stable/validator/reference/en-US/html_single/#table-spec-constraints} Consult the list of existing annotations}}
 	
+	I created this project on my spare time because I didn't find a API providing data input validation in a easy and lightweighted way.
+	I have seen many API using regex, for sure they are very powerfull but, in real life, when the project move to maintenance phase it often become the hell to maintain
+	mostly if the regex are not well documented or are complex. Moreover, I seen more and more projects using a value object to store the set of values received by an input source (ie user input) then 
+	I think that using annotation to clearly indicate, at value object member level, the defensive measure implemented can be helpful for security auditor and dev team :)
+	
+	I update the list of annotations when I discover/learn a new injection technique based on my profesional work and the following reading:
+	
+	* {{{http://www.amazon.com/Web-Application-Hackers-Handbook-Discovering-ebook/dp/B000SFC7S0/ref=sr_1_3?ie=UTF8&qid=1391872094&sr=8-3&keywords=web+application+hackers+handbook} The Web Application Hacker's Handbook: Discovering and Exploiting Security Flaws,Edition I}}
+	
+	* {{{http://www.amazon.com/The-Web-Application-Hackers-Handbook/dp/1118026470/ref=sr_1_1?ie=UTF8&qid=1391872149&sr=8-1&keywords=web+application+hackers+handbook} The Web Application Hacker's Handbook: Discovering and Exploiting Security Flaws, Edition II}}
+		   
+	* {{{http://www.amazon.com/HACKING-EXPOSED-WEB-APPLICATIONS-Edition/dp/0071740643/ref=sr_1_14?ie=UTF8&qid=1391872224&sr=8-14&keywords=web+application+security} Hacking Exposed Web Applications, Edition III}}
+	
+	* {{{http://boutique.ed-diamond.com/module/qi_subscription/default?id_family=7} MISC Magazine}} 
+	
+	[]
+	
+	[]
+	
+	[]	
+	
+Project continuous integration process.
+
 [./images/CIP.png]
 	
 How to declare dependency.
