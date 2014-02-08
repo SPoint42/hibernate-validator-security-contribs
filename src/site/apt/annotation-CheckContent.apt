@@ -54,4 +54,4 @@ How to use annotation 'CheckContent'.
 	
 	
 	
-	"<<whitelistLocale>>" attribute is used to indicate the locale to used for load bundle (property file) containing the character whitelist (if no locale is specified then the validaor take the default runtime locale).
+	"<<whitelistLocale>>" attribute is used to indicate the locale to used for load bundle (property file) containing the character whitelist (if no locale is specified then the validator take the default runtime locale).
