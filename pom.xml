@@ -287,7 +287,7 @@
                                         <rule implementation="com.redhat.victims.VictimsRule">
                                             <metadata>fatal</metadata>
                                             <fingerprint>fatal</fingerprint>
-                                            <updates>auto</updates>
+                                            <updates>daily</updates>
                                         </rule>
                                     </rules>
                                     <fail>true</fail>

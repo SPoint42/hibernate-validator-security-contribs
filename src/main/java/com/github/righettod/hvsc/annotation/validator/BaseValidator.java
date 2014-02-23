@@ -3,6 +3,7 @@ package com.github.righettod.hvsc.annotation.validator;
 import java.io.UnsupportedEncodingException;
 import java.net.URLDecoder;
 import java.nio.charset.Charset;
+import java.util.Locale;
 
 import org.apache.commons.lang.StringUtils;
 
@@ -56,7 +57,7 @@ public class BaseValidator {
 				if (e != null) {
 					String msg = StringUtils.defaultString(e.getMessage());
 					String ref = "urldecoder: illegal hex characters in escape (%) pattern";
-					if (msg.toLowerCase().indexOf(ref) == -1) {
+					if (msg.toLowerCase(Locale.UK).indexOf(ref) == -1) {
 						throw e;
 					}
 				}
