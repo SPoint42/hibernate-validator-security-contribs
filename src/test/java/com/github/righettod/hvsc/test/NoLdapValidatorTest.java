@@ -67,7 +67,24 @@ public class NoLdapValidatorTest extends BaseTest {
 			Assert.assertEquals("TestID=" + testId, "data10", constraintViolations.iterator().next().getPropertyPath().toString());
 			i++;
 		}
+	}
 
+	/**
+	 * Test case for the detection of the NULL byte that is used to stop string expression.
+	 * 
+	 * @throws Exception
+	 */
+	@Test
+	public void testCaseNullByte() throws Exception {
+		// Create sample bean
+		SimpleBean bean = new SimpleBean();
+		bean.setData10("Hello%00World");
+		// Apply validation
+		Set<ConstraintViolation<SimpleBean>> constraintViolations = VALIDATOR.validate(bean);
+		// Validate test
+		Assert.assertTrue(!constraintViolations.isEmpty());
+		Assert.assertEquals(1, constraintViolations.size());
+		Assert.assertEquals("data10", constraintViolations.iterator().next().getPropertyPath().toString());
 	}
 
 }

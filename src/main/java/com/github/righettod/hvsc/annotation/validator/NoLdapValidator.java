@@ -53,14 +53,18 @@ public class NoLdapValidator extends BaseValidator implements ConstraintValidato
 				// Step 1b : Decode value using default charset
 				String decodedValue = decode(value, Charset.defaultCharset().name());
 				// Step 2 : Check character list
+				int code = 0;
 				for (char c : decodedValue.toCharArray()) {
-					if (LDAP_FILTER_SPECIAL_CHARACTER_SET.indexOf(c) != -1) {
+					code = c;
+					// Manage also case of the NULL Byte used to stop LDAP expression
+					if ((LDAP_FILTER_SPECIAL_CHARACTER_SET.indexOf(c) != -1) || (code == 0)) {
 						isValidFlg = false;
 						break;
 					}
 				}
 			}
-		} catch (Exception e) {
+		}
+		catch (Exception e) {
 			LOGGER.error("Error during data validation !", e);
 			isValidFlg = false;
 		}
