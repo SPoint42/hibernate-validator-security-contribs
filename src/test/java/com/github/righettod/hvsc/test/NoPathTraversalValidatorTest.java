@@ -65,7 +65,24 @@ public class NoPathTraversalValidatorTest extends BaseTest {
 			Assert.assertEquals("TestID=" + testId, 1, constraintViolations.size());
 			Assert.assertEquals("TestID=" + testId, "data13", constraintViolations.iterator().next().getPropertyPath().toString());
 		}
+	}
 
+	/**
+	 * Test case for the detection of the NULL byte that is used to stop string expression.
+	 * 
+	 * @throws Exception
+	 */
+	@Test
+	public void testCaseNullByte() throws Exception {
+		// Create sample bean
+		SimpleBean bean = new SimpleBean();
+		bean.setData13("Hello%00World");
+		// Apply validation
+		Set<ConstraintViolation<SimpleBean>> constraintViolations = VALIDATOR.validate(bean);
+		// Validate test
+		Assert.assertTrue(!constraintViolations.isEmpty());
+		Assert.assertEquals(1, constraintViolations.size());
+		Assert.assertEquals("data13", constraintViolations.iterator().next().getPropertyPath().toString());
 	}
 
 }
