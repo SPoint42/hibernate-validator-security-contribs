@@ -70,16 +70,8 @@ public class NoPathTraversalValidator extends BaseValidator implements Constrain
 						break;
 					}
 				}
-				// Step 3: Manage case of the NULL Byte used to stop String expression
-				for (int i = 0; i < decodedValueLC.length(); i++) {
-					if (decodedValueLC.codePointAt(i) == 0) {
-						isValidFlg = false;
-						break;
-					}
-				}
 			}
-		}
-		catch (Exception e) {
+		} catch (Exception e) {
 			LOGGER.error("Error during data validation !", e);
 			isValidFlg = false;
 		}

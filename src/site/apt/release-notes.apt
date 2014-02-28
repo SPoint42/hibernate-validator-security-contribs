@@ -9,10 +9,8 @@
 	* Enhance documentation.
 	
 	* Add detection of the NULL byte into the LDAP validator.
-	
-	* Add detection of the NULL byte into the "Path Traversal" validator.
 		
-	[]
+
 
 1.3.0 
 
