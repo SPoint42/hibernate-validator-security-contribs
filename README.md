@@ -51,3 +51,8 @@ https://righettod.ci.cloudbees.com/job/HibernateValidatorSecurityContribs
 Details about the content of each release can be found on:
 
 https://righettod.ci.cloudbees.com/job/HibernateValidatorSecurityContribs/site/release-notes.html
+
+## Roadmap
+
+* Migrate to Java 8,
+* Add annotation for NoSQL injection protection.
