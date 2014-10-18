@@ -5,7 +5,7 @@ import java.nio.charset.Charset;
 import javax.validation.ConstraintValidator;
 import javax.validation.ConstraintValidatorContext;
 
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -51,7 +51,8 @@ public class NoTagValidator extends BaseValidator implements ConstraintValidator
 				// Step 2 : Check tag presence
 				isValidFlg = (decodedValue.indexOf("/>") == -1);
 			}
-		} catch (Exception e) {
+		}
+		catch (Exception e) {
 			LOGGER.error("Error during data validation !", e);
 			isValidFlg = false;
 		}

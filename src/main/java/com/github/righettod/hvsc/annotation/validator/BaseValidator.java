@@ -5,7 +5,7 @@ import java.net.URLDecoder;
 import java.nio.charset.Charset;
 import java.util.Locale;
 
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 
 import com.github.righettod.hvsc.type.ConfigurationJVMProperties;
 import com.ibm.icu.text.CharsetDetector;

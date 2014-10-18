@@ -8,7 +8,7 @@ import java.util.ResourceBundle;
 import javax.validation.ConstraintValidator;
 import javax.validation.ConstraintValidatorContext;
 
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 import org.codehaus.jackson.JsonParseException;
 import org.codehaus.jackson.map.JsonMappingException;
 import org.codehaus.jackson.map.ObjectMapper;
@@ -69,7 +69,8 @@ public class CheckContentValidator extends BaseValidator implements ConstraintVa
 		ResourceBundle bundle = null;
 		try {
 			bundle = ResourceBundle.getBundle(WHITELIST_BASE_BUNDLE_NAME, locale);
-		} catch (Exception e) {
+		}
+		catch (Exception e) {
 			// Send warning
 			LOGGER.warn("Bundle cannot be found for locale {}, load default bundle embedded into artefact !", locale.getLanguage());
 			// On error case load the default bundle
@@ -91,13 +92,16 @@ public class CheckContentValidator extends BaseValidator implements ConstraintVa
 				if (this.continuousRepetitionLimitationMap.isEmpty()) {
 					this.continuousRepetitionLimitationMap = null;
 				}
-			} catch (JsonParseException e) {
+			}
+			catch (JsonParseException e) {
 				throw new RuntimeException("Unable to parse Json expression '" + this.continuousRepetitionLimitationMapJsonExpr + "' !", e);
-			} catch (JsonMappingException e) {
+			}
+			catch (JsonMappingException e) {
 				String sample = "{\"(\":1,\"-\":1,\".\":3,\"'\":1}";
 				throw new RuntimeException("Invalid Json expression '" + this.continuousRepetitionLimitationMapJsonExpr
 						+ "', expression must be a map where key is a string and value is a number !, example : " + sample, e);
-			} catch (IOException e) {
+			}
+			catch (IOException e) {
 				throw new RuntimeException("Unable to parse Json expression '" + this.continuousRepetitionLimitationMapJsonExpr + "' !", e);
 			}
 		}
@@ -152,7 +156,8 @@ public class CheckContentValidator extends BaseValidator implements ConstraintVa
 					previous = current;
 				}
 			}
-		} catch (Exception e) {
+		}
+		catch (Exception e) {
 			LOGGER.error("Error during data validation !", e);
 			isValidFlg = false;
 		}

@@ -9,6 +9,10 @@
 	* Enhance documentation.
 	
 	* Add detection of the NULL byte into the LDAP validator.
+	
+	* Change "commons-lang" artifact dependency to one with GroupID "org.apache.commons".
+	
+	* Add new whitelists in default bundle.  
 		
 
 
